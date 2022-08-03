@@ -45,23 +45,23 @@
     width: 250px;
     height: 40px;
     margin-top: 40px;
-    background-color: #66BB6A;
-    color: white;  
+    /* background-color: #66BB6A; */
+    /* color: white;   */
     font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
     border: none;
-    outline: none;
+    outline: 1px solid;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#submit:hover {
+/* #submit:hover {
     cursor: pointer;
     background-color: black;
-}
+} */
 
 .form a{
     text-decoration: none;
