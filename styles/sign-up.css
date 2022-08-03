@@ -89,7 +89,7 @@ form .user-details .input-box {
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
-    border-color: green;
+    /* border-color: green; */
 }
 
 form .button {
