@@ -14,3 +14,8 @@ password.addEventListener('blur',function(){
 
     }
 })
+
+
+
+//All inputs required
+

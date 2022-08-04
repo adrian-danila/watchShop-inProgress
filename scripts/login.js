@@ -10,3 +10,4 @@ document.getElementById("email").addEventListener("keyup", e => {
         document.getElementById('submit').disabled = false;
     }
 });
+
