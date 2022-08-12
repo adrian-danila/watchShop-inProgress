@@ -5,18 +5,28 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
 
+
+
+
+
 .container {
+   
     display: flex;
     height: 600px;
     width: 900px;
     box-shadow: 0 0 10px grey;
     margin: auto;
-    margin-top: 5%
-    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
 
 }
+
 
 .form {
     display: flex;
