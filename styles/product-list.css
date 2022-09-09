@@ -148,7 +148,37 @@ button {
     justify-content: flex-start;
 }
 
+/* Product List by DOM Manipulation  */
 
+
+
+.products1 {
+    background-color: #F4F4F4;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+
+
+.products1 div {
+    margin: 20px auto;
+    /* border: 3px solid black; */
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+}
+
+.products1 button {
+
+}
+
+img {
+    height: 250px;
+}
 
 /* ------Product List --------- */
 
