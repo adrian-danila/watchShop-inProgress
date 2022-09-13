@@ -85,5 +85,10 @@ createWatches('https://reqres.in/img/faces/2-image.jpg', 'Misbona', '76$');
 createWatches('https://reqres.in/img/faces/2-image.jpg', 'Misbona', '76$');
 createWatches('https://reqres.in/img/faces/2-image.jpg', 'Misbona', '76$');
 createWatches('https://reqres.in/img/faces/2-image.jpg', 'Misbona', '76$');
+createWatches('https://reqres.in/img/faces/2-image.jpg', 'Misbona', '76$');
+createWatches('https://reqres.in/img/faces/2-image.jpg', 'Misbona', '76$');
+createWatches('https://reqres.in/img/faces/2-image.jpg', 'Misbona', '76$');
+createWatches('https://reqres.in/img/faces/2-image.jpg', 'Misbona', '76$');
+createWatches('https://reqres.in/img/faces/2-image.jpg', 'Misbona', '76$');
 
 
