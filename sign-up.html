@@ -13,36 +13,26 @@
             <img src="/images/icon-watch.png">
         </div>
         <div class="title">Sign Up Below!</div>
-        <form action="#" method="post">
+        <form role="form" onsubmit="signUp(event);" autocomplete="off">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter your first name" required>
+                    <input type="text" id="fname" placeholder="Enter your first name" required>
                 </div>
 
                 <div class="input-box">
                     <span class="details">Last Name</span>
-                    <input type="text" placeholder="Enter your last name" required>
+                    <input type="text" id="lname" placeholder="Enter your last name" required>
                 </div>
 
                 <div class="input-box">
                     <span class="details">Email adress</span>
-                    <input type="email" name="email" placeholder="Enter your email adress" required>
-                </div>
-
-                <div class="input-box">
-                    <span class="details">Username</span>
-                    <input type="text" name="username" placeholder="Enter your username" required>
+                    <input type="email" name="email" id="email" placeholder="Enter your email adress" required>
                 </div>
 
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input type="password" name="password" placeholder="Enter your password" required>
-                </div>
-
-                <div class="input-box">
-                    <span class="details">Confirm Password</span>
-                    <input type="password" name="confirm-password" placeholder="Enter your password again" required>
+                    <input type="password" name="password" id="pwd" placeholder="Enter your password" required>
                 </div>
 
                 <div class="button">
