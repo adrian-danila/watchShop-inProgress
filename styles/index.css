@@ -257,7 +257,7 @@ button {
     width: auto;
     height: 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #243143;
 }
@@ -268,7 +268,7 @@ button {
 }
 
 .btn-over-footer {
-    margin-right: 55px;
+    margin-right: 40px;
 }
 
 
