@@ -8,6 +8,13 @@
 }
 
 
+body {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    background-color: #dfe9f2;
+}
+
+
 /* Style for header  */
 
 
@@ -54,7 +61,6 @@ a {
     text-decoration: none;
 }
 
-
 /*------------- Style for Navbar  -------------*/
 
 
@@ -63,7 +69,10 @@ a {
     justify-content: center;
     align-items: center;
     width: auto;
+    /* border: 1px solid black; */
     height: 3em;
+    color: blue;
+    background-color: #ffffff;
 }
 
 .nav-bar-ul {
@@ -74,7 +83,7 @@ a {
 li {
     color: #243143;
     font-weight: 600;
-    margin: 3.9em;
+    /* margin: 3.9em; */
 }
 
 /* ---------Style Hero Banner ------------- */
@@ -197,7 +206,7 @@ table {
     width: auto;
     display: flex;
     /* border: 10px solid red; */
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
      
 }
