@@ -159,8 +159,6 @@ button {
 
 /* Product List by DOM Manipulation  */
 
-
-
 .products1 {
     background-color: #F4F4F4;
     width: auto;
@@ -169,8 +167,6 @@ button {
     flex-wrap: wrap;
     /* border: 3px solid red; */
     padding: 30px;
-
-    
 }
 
 
@@ -180,12 +176,19 @@ button {
     padding-left: 5px;
     padding-right: 5px;
     background-color: white;
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 .products1 button {
+    margin-left: 45px;
+    /* de incercat alta solutie */
 
 }
+
+.articleClass {
+    background-color: white;
+}
+
 
 img {
     height: 250px;

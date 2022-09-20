@@ -109,16 +109,21 @@ const productArticle = document.createElement('article');
 const imgEl = document.createElement('img');
 const nameEl = document.createElement('div');
 const priceEl = document.createElement('div');
+const buttonEl = document.createElement('button');
+productArticle.classList.add("articleClass");
+nameEl.classList.add("nameElClass");
+priceEl.classList.add("priceElClass");
 
 nameEl.textContent = name;
 imgEl.src = avatar;
+buttonEl.textContent = "Buy Now";
 
 productArticle.appendChild(imgEl);
 productArticle.appendChild(nameEl);
 productsContainer.appendChild(productArticle);
 priceEl.textContent = price;
 productArticle.appendChild(priceEl);
-
+productArticle.appendChild(buttonEl);
 }
 
 const {avatar, product_name, product_price} = products;
@@ -126,6 +131,7 @@ const {avatar, product_name, product_price} = products;
 products.forEach((product) => {
     createProducts(product.avatar, product.product_name, product.product_price);
 });
+
 
 
 // ---------Filter products-----------
