@@ -3,7 +3,7 @@ const products = [
         id: 1,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Black Watch S11',
-        product_price: '121.90$'
+        product_price: '121.90'
 
     },
 
@@ -12,7 +12,7 @@ const products = [
         id: 2,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'White Watch S13',
-        product_price: '15.90$'
+        product_price: '15.90'
 
     },
       
@@ -21,7 +21,7 @@ const products = [
         id: 3,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Yellow Watch S71',
-        product_price: '16.87$'
+        product_price: '16.87'
 
     },
 
@@ -29,7 +29,7 @@ const products = [
         id: 4,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Green Watch S31',
-        product_price: '19.20$'
+        product_price: '19.20'
 
     },
 
@@ -37,15 +37,16 @@ const products = [
         id: 5,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Blue Watch S21',
-        product_price: '17.65$'
+        product_price: '16.25'
 
     },
+
 
     {
         id: 6,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Red Watch S8',
-        product_price: '14.53$'
+        product_price: '14.53'
 
     },
     
@@ -53,7 +54,7 @@ const products = [
         id: 7,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Grey Watch S9',
-        product_price: '11.15$'
+        product_price: '11.15'
 
     },
     
@@ -61,7 +62,7 @@ const products = [
         id: 8,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Brown Watch S19',
-        product_price: '19.99$'
+        product_price: '19.99'
 
     },
     
@@ -69,7 +70,7 @@ const products = [
         id: 9,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Black Watch S11',
-        product_price: '11.90$'
+        product_price: '11.90'
 
     },
     
@@ -77,7 +78,7 @@ const products = [
         id: 10,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Blue Watch S4',
-        product_price: '33.40$'
+        product_price: '33.40'
 
     },
     
@@ -85,7 +86,7 @@ const products = [
         id: 11,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Green Watch S3',
-        product_price: '75.90$'
+        product_price: '75.90'
 
     },
     
@@ -93,7 +94,7 @@ const products = [
         id: 12,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Watch S2',
-        product_price: '154.10$'
+        product_price: '154.10'
 
     }
     
@@ -156,3 +157,24 @@ filterInput.addEventListener("change", (e) => {
 });
 
 // --------------------------------------------------------------
+
+//Iau pretul pe care il caut
+// Daca este valoarea asc => if (sorting value === 'asc') {
+//     else {
+//         invers
+//     }
+// }
+// 2.1 Sortez 
+// 2.2 daca este desc atunci sortez invers .
+// 3. randam ce am gasit.
+
+
+// Sort by Price
+
+const sortingSelection = document.getElementById('sorting');
+
+// console.log(sortingPrice);
+
+sortingSelection.addEventListener('change', (e) => {
+console.log(e.target.value);
+});
