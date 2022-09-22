@@ -1,4 +1,4 @@
-const users = [
+const products = [
     {
         id: 1,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
@@ -100,7 +100,12 @@ const users = [
     
 ]
 
+productsContainer = document.getElementById('products1');
 
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
-const user = users.find((user) => user.id == productId);
+const product = products.find((product) => product.id == productId);
+console.log(product);
+
+
+  
