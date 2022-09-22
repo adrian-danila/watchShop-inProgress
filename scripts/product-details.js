@@ -100,12 +100,10 @@ const products = [
     
 ]
 
-productsContainer = document.getElementById('products1');
 
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
-const product = products.find((product) => product.id == productId);
-console.log(product);
+const product = products.find((product) => products.id == productId);
 
 
   
