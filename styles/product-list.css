@@ -491,3 +491,21 @@ display: inline-block;
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+
+
+/* Button next and previous page  */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    /* border: 3px solid black; */
+}
+
+#prev_button {
+    margin: 10px;
+}
+
+#next_button {
+    margin: 10px;
+}

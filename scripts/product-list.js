@@ -100,8 +100,6 @@ const products = [
     
 ]
 
-
-
 //  -----------------Generate Products----------------
 
 productsContainer = document.getElementById('products1');
@@ -133,52 +131,66 @@ buttonEl.appendChild(buttonElText);
 
 const {avatar, product_name, product_price,id} = products;
 
-products.forEach((product) => {
-    createProducts(product.avatar, product.product_name, product.product_price);
-});
+// METHOD 1
+
+// products.forEach((product) => {
+//     createProducts(product.avatar, product.product_name, product.product_price);
+// });
 
 
+// METHOD 2
 
-// ---------Filter products-----------
+// for (const product of products) {
+//     const price_lei = `${product.product_price} ` + '€';
+//     createProducts(product.avatar,product.product_name,price_lei);
+// }
+
+
+function generateProducts(productsL) {
+    productsContainer.innerHTML = ''; // Erase container and after render the results
+    for (const product of productsL ) {
+        createProducts(product.avatar, product.product_name, product.product_price);
+    }
+}
+generateProducts(products);
+
+// ---------Filter products----------------------------
 
 const filterInput = document.getElementById('filter_users');
 
+
 filterInput.addEventListener("change", (e) => {
     const filterCriteria = e.target.value;
-    const filteredUsers = products.filter(user => {
-        if (user.product_name.toLocaleLowerCase().includes(filterCriteria.toLocaleLowerCase())) {
-            return true;
-        } else {
-            return false;
-        }
-    })
-    productsContainer.innerHTML = '';
-    for (const product of filteredUsers ) {
-        const name = `${products.product_name} ${products.product_price}`;
-        createProducts(product.avatar, product.product_name, product.product_price);
+
+    if(filterCriteria !== '') {
+        const filteredProducts = products.filter((product) => {
+            return product.product_name
+            .toLocaleLowerCase()
+            .startsWith(filterCriteria);
+        });
+        generateProducts(filteredProducts);
+    } else {
+        generateProducts(products);
     }
-    // console.log(filteredUsers);
+   
 });
 
-// --------------------------------------------------------------
+  // console.log(filteredUsers);
 
-//Iau pretul pe care il caut
-// Daca este valoarea asc => if (sorting value === 'asc') {
-//     else {
-//         invers
-//     }
-// }
-// 2.1 Sortez 
-// 2.2 daca este desc atunci sortez invers .
-// 3. randam ce am gasit.
+    // productsContainer.innerHTML = ''; // Erase container and after render the results
+    // for (const product of filteredUsers ) {
+    //     const name = `${products.product_name} ${products.product_price}`;
+    //     createProducts(product.avatar, product.product_name, product.product_price);
+    // }
+    // console.log(filteredUsers);
 
 
-// Sort by Price
+// ------------------------------------------------------
+
+//Sorting Selection
 
 const sortingSelection = document.getElementById('sorting');
 
-// console.log(sortingPrice);
-
 sortingSelection.addEventListener('change', (e) => {
-console.log(e.target.value);
-});
+    console.log(e.target.value);
+})
