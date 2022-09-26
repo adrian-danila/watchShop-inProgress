@@ -187,10 +187,45 @@ filterInput.addEventListener("change", (e) => {
 
 // ------------------------------------------------------
 
+
+//PSEUDO COD
+
+// 1. Iau numele pe care il caut
+// 2. daca este valoare asc
+//     2.1 sortez utilizatorii ascendent
+//     2.2 daca este valoarea desc atunci sortez invers alfabetic.
+// 3. Afisez rezultatele (randam produsele gasite)
 //Sorting Selection
+
+
 
 const sortingSelection = document.getElementById('sorting');
 
 sortingSelection.addEventListener('change', (e) => {
     console.log(e.target.value);
-})
+    let sorted;
+
+    const sortingValue = e.target.value;
+    if (sortingValue === "price-az") {
+        //sortez utilizatorii ascdendent
+        sorted = products.sort((a,b) =>{
+            return a.product_price < b.product_price
+             ? -1 
+             : a.product_price > b.product_price 
+             ? 1 
+             : 0;
+        });
+    } else {
+        sorted = products.sort((a,b) =>{
+            return a.product_price > b.product_price
+             ? -1
+             : a.product_price < b.product_price 
+             ? 1 
+             : 0;
+        });
+        //sortez utilizatorii invers alfabetic.
+    }
+    //randez rezultatele
+    generateProducts(sorted);
+});
+
