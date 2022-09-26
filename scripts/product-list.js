@@ -3,7 +3,7 @@ const products = [
         id: 1,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Black Watch S11',
-        product_price: '121.90'
+        product_price: '12.90'
 
     },
 
@@ -94,7 +94,7 @@ const products = [
         id: 12,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Watch S2',
-        product_price: '154.10'
+        product_price: '10.05'
 
     }
     
@@ -188,16 +188,7 @@ filterInput.addEventListener("change", (e) => {
 // ------------------------------------------------------
 
 
-//PSEUDO COD
-
-// 1. Iau numele pe care il caut
-// 2. daca este valoare asc
-//     2.1 sortez utilizatorii ascendent
-//     2.2 daca este valoarea desc atunci sortez invers alfabetic.
-// 3. Afisez rezultatele (randam produsele gasite)
-//Sorting Selection
-
-
+// Sort prices Low to High and High to Low
 
 const sortingSelection = document.getElementById('sorting');
 
@@ -207,25 +198,27 @@ sortingSelection.addEventListener('change', (e) => {
 
     const sortingValue = e.target.value;
     if (sortingValue === "price-az") {
-        //sortez utilizatorii ascdendent
-        sorted = products.sort((a,b) =>{
+        //sort value from low to high value
+        sorted = [...products].sort((a,b) =>{
             return a.product_price < b.product_price
              ? -1 
              : a.product_price > b.product_price 
              ? 1 
              : 0;
         });
-    } else {
-        sorted = products.sort((a,b) =>{
+        //sort prices from high value to low 
+    } else if (sortingValue === "price-za") {
+        sorted = [...products].sort((a,b) =>{
             return a.product_price > b.product_price
              ? -1
              : a.product_price < b.product_price 
              ? 1 
              : 0;
         });
-        //sortez utilizatorii invers alfabetic.
+    } else {
+        sorted = products;
     }
-    //randez rezultatele
+    //rend the result
     generateProducts(sorted);
 });
 
