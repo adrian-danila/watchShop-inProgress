@@ -101,6 +101,31 @@ const products = [
 ]
 
 
-// const urlParams = new URLSearchParams(window.location.search);
-// const productId = urlParams.get("id");
-// const product = products.find((product) => products.id == productId);
+const productsContainer = document.getElementById('details');
+
+const urlParams = new URLSearchParams(window.location.search);
+const productId = urlParams.get("id");
+const product = products.find((product) => products.id == productId);
+
+// function createProducts (avatar, name, price) {
+//     const productArticle = document.createElement('article');
+//     const imgEl = document.createElement('img');
+//     const nameEl = document.createElement('div');
+//     const priceEl = document.createElement('div');
+    
+//     nameEl.textContent = name;
+//     imgEl.src = avatar;
+//     priceEl.textContent = price;
+  
+//     productArticle.appendChild(imgEl);
+//     productArticle.appendChild(nameEl);
+//     productArticle.appendChild(priceEl);
+//     productsContainer.appendChild(productArticle);
+//     return productArticle;
+//     }
+    
+//     const {avatar, product_name, product_price} = products;
+
+//     const productEl = createProducts (avatar, product_name, product_price);
+
+//     productsContainer.appendChild(productEl);

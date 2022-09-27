@@ -222,3 +222,8 @@ sortingSelection.addEventListener('change', (e) => {
     generateProducts(sorted);
 });
 
+
+// ----------------------------------------------------------------
+
+//Products Pagination
+
