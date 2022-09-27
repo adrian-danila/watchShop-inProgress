@@ -101,7 +101,6 @@ const products = [
 ]
 
 
-
 const productsContainer = document.getElementById('details');
 
 const urlParams = new URLSearchParams(window.location.search);
