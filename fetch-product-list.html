@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="/styles/product-list.css">
+</head>
+
+<body>
+    <!-- Header and navbar  -->
+
+    <header>
+        <div class="header-nav">
+            <div class="logo">
+                <h4>Website Logo</h1>
+            </div>
+            <div class="cart-register-login">
+                <ul class="nav-links">
+                    <li><a href="/cart.html">Your cart</a></li>
+                    <li><a href="/sign-up.html">Register</a></li>
+                    <li><a href="/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-bar">
+            <ul class="nav-bar-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-list.html">Product List</a></li>
+                <li>Category 3</li>
+                <li>Category 4</li>
+                <li>Category 5</li>
+                <li>Category 6</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- // End of header and navbar -->
+
+    <div class="hero-container">
+        <div class="inner-container">
+            <input type="search" class="input-hero" id="filter_users" placeholder="Search for watch brand name or model...">
+            <button type="search" value="search">SEARCH</button>
+        </div>
+    </div>
+
+
+    <!-- Filter products by Price -->
+
+    <select name="sort" id="sorting"">
+    <option value="price">Sort by</option>
+    <option value="price-az">Price: Low to High</option>
+    <option value="price-za">Price: High to Low</option>
+    </select>
+    
+
+    <!-- Elements with DOM Manipulaion  -->
+    
+    <section id="products1" class="products1">
+        
+    </section>
+    
+
+<!-- Products - Template in HTML + CSS -->
+
+
+    <!-- <div class="products">
+        <div class="container">
+            <h1 class="lg-title">Special Offers</h1>
+            <p class="text-ligt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo repudiandae facere ipsum dolorum, vel reprehenderit nobis veniam voluptate saepe expedita. A fugiat ab accusantium vitae facere sequi ea assumenda!</p>
+        
+            <div class="product-items">
+
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="/images/hand-watch.png">
+                        </div>
+                        <div class="product-btns">
+                            <button type="button" class="btn-cart">Add to cart</button>
+                            <button type="button" class="btn-buy">View details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="sm-title">LifeStyle</h2>
+                        </div>
+                        <a href="#" class="product-name">Watch Black Nr.1</a>
+                        <p class="product-price">$150.00</p>
+                        <p class="product-price">133.00</p>
+                    </div>
+                    <div class="off-info">
+                        <h2 class="sm-title">25 off</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+    <div class="buttons">
+        <button id="prev_button">Previous</button>
+        <button id="next_button">Next</button>
+      </div>
+
+
+    <!--Over Footer-  -->
+
+    <div class="over-footer">
+        <h4 class="h4-over-footer">Start your 30-day free trial today. Cancel or upgrade anytime</h4>
+        <button class="btn-over-footer">BUTTON LABEL</button>
+    </div>
+    
+
+    <!-- Footer -->
+
+        <div class="row-footer">
+            <div class="footer-col">
+                <h4>The Footer</h4>
+                <ul class="ul-footer">
+                    <li class="li-footer"><a href="#">2022 The Website, Inc</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                    <h4>About</h4>
+                <ul class="ul-footer">
+                    <li class="li-footer"><a href="#">Team</a></li>
+                    <li class="li-footer"><a href="#">Jobs</a></li>
+                    <li class="li-footer"><a href="#">Blog</a></li>
+                    <li class="li-footer"><a href="#">Press</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul class="ul-footer">
+                    <li class="li-footer"><a href="#">FAQ</a></li>
+                    <li class="li-footer"><a href="#">Security</a></li>
+                    <li class="li-footer"><a href="#">Terms of service</a></li>
+                    <li class="li-footer"><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul class="ul-footer">
+                    <li class="li-footer"><a href="#">Facebook</a></li>
+                    <li class="li-footer"><a href="#">YouTube</a></li>
+                    <li class="li-footer"><a href="#">Twitter</a></li>
+                    <li class="li-footer"><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+            <script src="/src/fetch-product-list.js"></script>
+
+</body>
+
+</html>

@@ -99,6 +99,7 @@
 //     }
     
 // ]
+
 let products = [];
 
 const endpointUrl = "/data/products.json";
@@ -112,6 +113,7 @@ fetch(endpointUrl)
     products = productsRes;
     generateProducts(products);
 });
+
 
 //  -----------------Generate Products----------------
 
