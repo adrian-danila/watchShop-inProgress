@@ -3,7 +3,7 @@ const products = [
         id: 1,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Black Watch S11',
-        product_price: '121.90'
+        product_price: '12.90'
 
     },
 
@@ -94,13 +94,13 @@ const products = [
         id: 12,
         avatar: 'https://i.ibb.co/kyYzm1R/images.jpg',
         product_name: 'Watch S2',
-        product_price: '154.10'
+        product_price: '10.05'
 
     }
     
 ]
 
 
-const urlParams = new URLSearchParams(window.location.search);
-const productId = urlParams.get("id");
-const product = products.find((product) => products.id == productId);
+// const urlParams = new URLSearchParams(window.location.search);
+// const productId = urlParams.get("id");
+// const product = products.find((product) => products.id == productId);
