@@ -118,7 +118,7 @@ priceEl.classList.add("priceElClass");
 nameEl.textContent = name;
 imgEl.src = avatar;
 buttonElText.textContent = "View More";
-buttonElText.href =`/product-details.html?id=${id}`;
+buttonElText.href =`product-details.html?id=${id}`;
 
 productArticle.appendChild(imgEl);
 productArticle.appendChild(nameEl);
@@ -149,7 +149,7 @@ const {avatar, product_name, product_price,id} = products;
 function generateProducts(productsL) {
     productsContainer.innerHTML = ''; // Erase container and after render the results
     for (const product of productsL ) {
-        createProducts(product.avatar, product.product_name, product.product_price);
+        createProducts(product.avatar, product.product_name, product.product_price, product.id);
     }
 }
 generateProducts(products);
@@ -193,7 +193,7 @@ filterInput.addEventListener("change", (e) => {
 const sortingSelection = document.getElementById('sorting');
 
 sortingSelection.addEventListener('change', (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     let sorted;
 
     const sortingValue = e.target.value;
