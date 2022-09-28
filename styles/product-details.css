@@ -230,3 +230,68 @@ table {
 }
 
 
+/* //Style DOM Elements */
+
+.details {
+    display: flex;
+    /* flex-direction: column; */
+    /* margin: 2rem 0; */
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.infoArt {
+    box-sizing: border-box;
+    /* display: flex; */
+    /* font-size: 30px; */
+    /* border: 3px solid red; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 2rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+}
+
+.productName {
+    margin: 1rem;
+    font-size: 25px;
+}
+
+.productPrice {
+    margin: 1rem;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.buttonAddCart {
+    margin: 0 auto;
+}
+
+.imgArt {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin: 2rem;
+}
+
+.detailsTxt {
+    margin: 0.5rem;
+}
+
+.infoTxt {
+    margin: 0.5rem;
+}
+
+.detailsInfo {
+    border: 3px solid black;
+    width: auto;
+    height: 100px;
+}
+
+.details2 {
+    background-color: white;
+}

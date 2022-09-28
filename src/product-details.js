@@ -101,6 +101,7 @@ const products = [
 ]
 
 const productsContainer = document.getElementById("details");
+const productsContainer2 = document.getElementById("details2");
 
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
@@ -109,29 +110,67 @@ const product = products.find((product) => product.id == productId);
 // console.log(product);
 
 function createProducts (avatar, name, price) {
+
     const productArticle = document.createElement("article");
+    const infoArticle = document.createElement('article');
+    const detailsInfo = document.createElement('article');
+
+    
+
     const imgEl = document.createElement("img");
     const nameEl = document.createElement("div");
     const priceEl = document.createElement("div");
     
+    const buttonEl = document.createElement("button");
+    const detailsEl = document.createElement('h1');
+    const infoEl = document.createElement('h1');
+
+    
     nameEl.textContent = name;
     imgEl.src = avatar;
     priceEl.textContent = price;
+    buttonEl.textContent = "ADD TO MY CART";
+    detailsEl.textContent = "Details";
+    infoEl.textContent = "Info & Stats";
+
+
+    
+    
     
     productArticle.appendChild(imgEl);
-    productArticle.appendChild(nameEl);
-    productArticle.appendChild(priceEl);
+    infoArticle.appendChild(nameEl);
+    infoArticle.appendChild(priceEl);
+    infoArticle.appendChild(buttonEl);
+    infoArticle.appendChild(detailsEl);
+    infoArticle.appendChild(infoEl);
+    
+    
     productsContainer.appendChild(productArticle);
-    return productArticle;
+    productsContainer.appendChild(infoArticle);
+    productsContainer2.appendChild(detailsInfo);
+
+
+    infoArticle.classList.add('infoArt');
+    productArticle.classList.add('imgArt');
+    nameEl.classList.add('productName');
+    priceEl.classList.add('productPrice');
+    buttonEl.classList.add('buttonAddCart');
+    detailsEl.classList.add('detailsTxt');
+    infoEl.classList.add('infoTxt');
+    detailsInfo.classList.add('detailsInfo');
+   
+
+    // return productArticle;
     }
     
     const {avatar, product_name, product_price} = product;
 
     const productEl = createProducts(avatar,product_name, product_price);
 
+    productsContainer.appendChild(productEl);
     // console.log(productEl);
 
-    productsContainer.appendChild(productEl);
+    
 
 
 
