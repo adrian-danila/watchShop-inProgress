@@ -191,7 +191,9 @@ button {
 
 
 img {
+    width: 100%;
     height: 250px;
+    background-size: cover;
 }
 
 article {
@@ -201,6 +203,10 @@ article {
     width: 220px;
     box-shadow: 0 0 5px;
 
+}
+
+.priceElClass {
+    font-weight: bold;
 }
 
 /* ------Product List --------- */
