@@ -23,14 +23,22 @@ const nameEl = document.createElement('div');
 const priceEl = document.createElement('div');
 const buttonEl = document.createElement('button');
 const buttonElText = document.createElement('a');
+
+const buttonCart = document.createElement('button');
+const buttonCartAnchor = document.createElement('a');
 productArticle.classList.add("articleClass");
+
 nameEl.classList.add("nameElClass");
 priceEl.classList.add("priceElClass");
+buttonCartAnchor.classList.add("add-cart");
+
 
 nameEl.textContent = name;
 imgEl.src = avatar;
 buttonElText.textContent = "View More";
 buttonElText.href =`product-details.html?id=${id}`;
+buttonCartAnchor.href="#";
+buttonCartAnchor.textContent = "Add Cart";
 
 productArticle.appendChild(imgEl);
 productArticle.appendChild(nameEl);
@@ -39,9 +47,30 @@ priceEl.textContent = price;
 productArticle.appendChild(priceEl);
 productArticle.appendChild(buttonEl);
 buttonEl.appendChild(buttonElText);
+productArticle.appendChild(buttonCart);
+buttonCart.appendChild(buttonCartAnchor);
+
+// -----Cart-----
+
+let carts = document.querySelectorAll('.add-cart');
+
+for (let i = 0; i < carts.length; i++) {
+    carts[i].addEventListener("click", () => {
+        cartNumbers();
+    });
+};
+
+function cartNumbers () {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    console.log(productNumbers);
+    console.log(typeof productNumbers);AS
+localStorage.setItem('cartNumbers', 1);
+}
+
 }
 
 const {avatar, product_name, product_price,id} = products;
+
 
 // METHOD 1
 
@@ -156,3 +185,7 @@ nextButton.addEventListener('click', () => {
     currentPage++;
     
 });
+
+// ---------------------------------------
+// Cart--------------
+

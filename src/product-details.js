@@ -129,7 +129,7 @@ function createProducts (avatar, name, price) {
     nameEl.textContent = name;
     imgEl.src = avatar;
     priceEl.textContent = price;
-    buttonEl.textContent = "ADD TO MY CART";
+    buttonEl.textContent = "Add to cart";
     detailsEl.textContent = "Details";
     infoEl.textContent = "Info & Stats";
 
