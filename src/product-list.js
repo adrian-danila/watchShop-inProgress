@@ -1,3 +1,6 @@
+
+// Fetch data from jsonFile
+
 let products = [];
 
 const endpointUrl = "/data/products.json";
@@ -25,66 +28,91 @@ const buttonEl = document.createElement('button');
 const buttonElText = document.createElement('a');
 
 const buttonCart = document.createElement('button');
-const buttonCartAnchor = document.createElement('a');
+const buttonCartText = document.createElement('a');
 productArticle.classList.add("articleClass");
 
 nameEl.classList.add("nameElClass");
 priceEl.classList.add("priceElClass");
-buttonCartAnchor.classList.add("add-cart");
+buttonCartText.classList.add("add-cart");
 
 
-nameEl.textContent = name;
 imgEl.src = avatar;
+nameEl.textContent = name;
+priceEl.textContent = price;
+
 buttonElText.textContent = "View More";
 buttonElText.href =`product-details.html?id=${id}`;
-buttonCartAnchor.href="#";
-buttonCartAnchor.textContent = "Add Cart";
+buttonCartText.textContent = "Add Cart";
+buttonCartText.href="#";
 
 productArticle.appendChild(imgEl);
 productArticle.appendChild(nameEl);
-productsContainer.appendChild(productArticle);
-priceEl.textContent = price;
 productArticle.appendChild(priceEl);
 productArticle.appendChild(buttonEl);
 buttonEl.appendChild(buttonElText);
 productArticle.appendChild(buttonCart);
-buttonCart.appendChild(buttonCartAnchor);
+buttonCart.appendChild(buttonCartText);
+productsContainer.appendChild(productArticle);
 
-// -----Cart-----
+//Cart function
 
 let carts = document.querySelectorAll('.add-cart');
 
-for (let i = 0; i < carts.length; i++) {
-    carts[i].addEventListener("click", () => {
-        cartNumbers();
-    });
-};
+for (let i=0; i < carts.length;i++) {
+    carts[i].addEventListener('click', () => {
+       cartNumbers();
+    })
+}
 
-function cartNumbers () {
+function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers');
-    console.log(productNumbers);
-    console.log(typeof productNumbers);AS
-localStorage.setItem('cartNumbers', 1);
+
+    if(productNumbers) {
+        document.querySelector('.nav-links span').textContent = productNumbers;
+    }
 }
 
+function cartNumbers() {
+    // console.log('The product clicked is', products);
+    let productNumbers = localStorage.getItem('cartNumbers');
+    // console.log(productNumbers);
+    productNumbers = parseInt(productNumbers);
+    // console.log(typeof productNumbers);
+
+    if (productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector('.nav-links span').textContent = productNumbers;
+    } else  {
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.nav-links span').textContent = 1;
+    }
+    setItems(products);   
 }
 
-const {avatar, product_name, product_price,id} = products;
+function setItems(products) {
+    // console.log('inside of this function');
+    // console.log('my product is', products);
+    let cartItems = localStorage .getItem('productsInCart')
+    cartItems = JSON.parse(cartItems);
+    console.log("my Cart", cartItems);
+
+    if(cartItems != null) {
+        cartItems[products.product_name].inCart += 1;
+    }
+
+    products.inCart = 1;
+        cartItems = {
+        [products.product_name]: products
+    }
+    localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+}
+
+onLoadCartNumbers();
 
 
-// METHOD 1
+}
 
-// products.forEach((product) => {
-//     createProducts(product.avatar, product.product_name, product.product_price);
-// });
-
-
-// METHOD 2
-
-// for (const product of products) {
-//     const price_lei = `${product.product_price} ` + '€';
-//     createProducts(product.avatar,product.product_name,price_lei);
-// }
+// const {avatar, product_name, product_price,id} = products;
 
 
 function generateProducts(productsL) {
@@ -95,97 +123,5 @@ function generateProducts(productsL) {
 }
 generateProducts(products);
 
-// ---------Filter products----------------------------
 
-const filterInput = document.getElementById('filter_users');
-
-
-filterInput.addEventListener("change", (e) => {
-    const filterCriteria = e.target.value;
-
-    if(filterCriteria !== '') {
-        const filteredProducts = products.filter((product) => {
-            return product.product_name
-            .toLocaleLowerCase()
-            .startsWith(filterCriteria);
-        });
-        generateProducts(filteredProducts);
-    } else {
-        generateProducts(products);
-    }
-   
-});
-
-  // console.log(filteredUsers);
-
-    // productsContainer.innerHTML = ''; // Erase container and after render the results
-    // for (const product of filteredUsers ) {
-    //     const name = `${products.product_name} ${products.product_price}`;
-    //     createProducts(product.avatar, product.product_name, product.product_price);
-    // }
-    // console.log(filteredUsers);
-
-
-// ------------------------------------------------------
-
-
-// Sort prices Low to High and High to Low
-
-const sortingSelection = document.getElementById('sorting');
-
-sortingSelection.addEventListener('change', (e) => {
-    // console.log(e.target.value);
-    let sorted;
-
-    const sortingValue = e.target.value;
-    if (sortingValue === "price-az") {
-        //sort value from low to high value
-        sorted = [...products].sort((a,b) =>{
-            return a.product_price < b.product_price
-             ? -1 
-             : a.product_price > b.product_price 
-             ? 1 
-             : 0;
-        });
-        //sort prices from high value to low 
-    } else if (sortingValue === "price-za") {
-        sorted = [...products].sort((a,b) =>{
-            return a.product_price > b.product_price
-             ? -1
-             : a.product_price < b.product_price 
-             ? 1 
-             : 0;
-        });
-    } else {
-        sorted = products;
-    }
-    //rend the result
-    generateProducts(sorted);
-});
-
-
-// ----------------------------------------------------------------
-
-//Products Pagination
-
-const itemPerPage = 8;
-let currentPage = 1;
-
-generateProducts([...products].splice(0,itemPerPage));
-
-// console.log(products);   // make a copy with [...] to keep all products 
-
-const nextButton = document.getElementById('next_button');
-const prevButton = document.getElementById('prev_button');
-
-nextButton.addEventListener('click', () => {
-    const currentIndex = currentPage *itemPerPage
-    const productFP = [...products].splice(currentIndex, itemPerPage);
-    generateProducts(productFP);
-    currentPage++;
-    
-});
-
-// ---------------------------------------
-// Cart--------------
 
