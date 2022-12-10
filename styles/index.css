@@ -13,6 +13,7 @@ body {
 }
 
 /* Style for header  */
+
 header {
     display: flex;
     justify-content: center;
@@ -36,12 +37,6 @@ header .logo {
 header .logo span{
     text-transform: uppercase;
 }
-
-header .logo:hover {
-    color: red;
-    
-}
-
 
 header .nav-links {
     list-style: none;
@@ -82,17 +77,11 @@ nav .categories-links {
     width: 950px;
 }
 
-nav li {
-    color: #243143;
-    font-weight: 600;
-    margin: 1rem;
-    font-size: 15px;
-}
-
 nav li a {
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     color: #000;
+    font-size: 14px;
 }
 
 
@@ -114,6 +103,7 @@ nav li a {
 color: white;
 display: flex;
 justify-content: center;
+text-align: center;
 }
 
 .h4-hero {
@@ -143,6 +133,18 @@ button {
 }
 
 /* ---------------Style Section One ---------------- */
+.section-wrapper {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    /* border: 3px solid red; */
+
+}
+
+.section-wrapper h2 {
+    margin-top: 40px;
+}
+
 
 .section-one {
     width: auto;
@@ -152,25 +154,48 @@ button {
     align-items: center;
     /* border: 1px solid black; */
     background-color: #ffffff;
-    overflow: hidden;
-    margin: 0 auto;
-    position: relative;
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* border: 3px solid  yellow; */
 }
 
-
+.arrows-section {
+    font-size: 30px;
+    color: #B3C4D4 ;
+}
 /* -----Style Cards----- */
 
+.card-large {
+    /* border: 4px solid pink; */
+    height: 400px;
+    width: 420px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgray;
+    text-align: center;
+}
+
+.car-two {
+    background-image: url('/images/watch-for-large-card.png');
+}
+.button-card-large a {
+    text-decoration: none;
+}
+
+.button-card-large {
+    border: 1px solid black;
+    background-color: white;
+
+}
 
 .card {
     background: white;
     /* border: 1px solid gray; */
-    width: 220px;
-    /* height: 400px; */
-    margin: 1rem;
+    width: 210px;
+    height: 400px;
+    margin: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px lightgrey; 
-    box-sizing: border-box;
-    min-width: 220px;
 }
 
 .card-image {
@@ -186,20 +211,25 @@ button {
 }
 
 .description-watch {
-    margin: 5px;
+    margin: 15px;
 }
 
 
 .card a {
     background-color: white;
-    padding: 15px 20px;
-    display: block;
+    padding: 10px 15px;
+    display: flex;
     text-align: center;
+    justify-content: center;
     margin: 25px 20px;
     border: 1px solid gray;
     color: gray;
     font-weight: bold;
+    text-decoration: none;
+    /* border: 3px solid red; */
+
 }
+
 
 /* ----------Section two ------------- */
 
