@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@500&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -154,6 +155,8 @@ button {
     display: flex;
     justify-content: flex-start;
 }
+
+
 
 /* Product List by DOM Manipulation  */
 

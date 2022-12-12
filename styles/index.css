@@ -96,15 +96,15 @@ nav li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* filter: blur(2px); */
 }
 
+
 .h2-hero {
-color: white;
-display: flex;
-justify-content: center;
-text-align: center;
-font-weight: 400;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
 }
 
 .h4-hero {
@@ -139,12 +139,12 @@ button {
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    /* border: 3px solid red; */
-
+    text-align: center;
 }
 
 .section-wrapper h2 {
     margin-top: 40px;
+    font-size: 15px;
 }
 
 
@@ -154,16 +154,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
     background-color: #ffffff;
-    /* overflow: hidden; */
-    /* position: relative; */
-    /* border: 3px solid  yellow; */
 }
 
 .arrows-section {
     font-size: 30px;
-    color: #B3C4D4 ;
+    color: #B3C4D4;
+    margin: 15px;
 }
 /* -----Style Cards----- */
 
@@ -175,6 +172,7 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 10px lightgray;
     text-align: center;
+    margin: 15px
 }
 
 .car-two {
