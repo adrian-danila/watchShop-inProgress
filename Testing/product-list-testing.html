@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    
+    <link rel="stylesheet" href="/Testing/product-list-testing.css">
+    <!-- <link rel="icon" type="image/x-icon" href="/images/watch.ico"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+
+<body>
+    
+<!-- Header -->
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="/index.html">
+                <i class="fa-sharp fa-solid fa-clock"></i>
+                <span>Watch Shop</span>
+            </a>
+        </div>
+        <div class="nav-links-wrapper">
+            <ul class="nav-links">
+                <li><a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i> Your Cart <span>0</span></a></li>
+                <li><a href="/sign-up.html"><i class="fa-solid fa-user"></i> Register</a></li>
+                <li><a href="/login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- Navbar -->
+
+<nav>
+    <div class="categories-links-wrapper">
+        <ul class="categories-links">
+            <li><a href="index.html">Category 1</a></li>
+            <li><a href="product-list.html">Product List</a></li>
+            <li><a href="index.html">Category 3</a></li>
+            <li><a href="index.html">Category 4</a></li>
+            <li><a href="index.html">Category 5</a></li>
+            <li><a href="index.html">Category 6</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Searchbar -->
+
+    <div class="hero-container">
+        <div class="inner-container">
+            <input type="search" class="input-hero" id="filter_users" placeholder="Search for watch brand name or model...">
+            <button type="search" value="search">SEARCH</button>
+        </div>
+    </div>
+
+
+    <!-- Sort by -->
+
+    <div class="sort-and-results">
+
+        <div class="div-sort">
+            <h5 class="h5-sort">Sort by</h5>
+            <select name="select-sort" id="sorting">
+                <option value="price-az">Price: Low to High</option>
+                <option value="price-za">Price: High to Low</option>
+            </select>
+        </div>
+        
+        <div class="div-results">
+        <h5 class="h5-results">Results per page</h5>
+        <select name="select-results" id="results">
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        </div>
+        
+    </div>
+
+    <div class="products">
+
+        
+        <div class="product-inside">
+
+            <div class="container-card">
+                <div class="card-product">
+                    <div class="img-product"></div>
+                    <h4 class="title-product">This space is for the product title which can span two rows</h4>
+                    <h5 class="price-product">$0.00</h5>
+                </div>
+            </div>
+    
+            <div class="container-card">
+                <div class="card-product">
+                    <div class="img-product"></div>
+                    <h4 class="title-product">This space is for the product title which can span two rows</h4>
+                    <h5 class="price-product">$0.00</h5>
+                </div>
+            </div>
+    
+            <div class="container-card">
+                <div class="card-product">
+                    <div class="img-product"></div>
+                    <h4 class="title-product">This space is for the product title which can span two rows</h4>
+                    <h5 class="price-product">$0.00</h5>
+                </div>
+            </div>
+    
+            <div class="container-card">
+                <div class="card-product">
+                    <div class="img-product"></div>
+                    <h4 class="title-product">This space is for the product title which can span two rows</h4>
+                    <h5 class="price-product">$0.00</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="showing-results">
+
+        <div class="div-results">
+            <h5 class="h5-results">Results per page</h5>
+            <select name="select-results" id="results">
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            </div>
+
+        <div class="product-pages">
+            <h4 class="showing-products">Showing 1-25 of 300 reults</h4>
+        </div>
+        
+        <div class="page-numbers">
+            <div class="page">
+                <h5>1</h5>
+            </div>
+        </div>
+
+    </div>
+
+    
+<!-- Over footer -->
+
+<div class="over-footer">
+    <div class="over-footer-content">
+        <h4 class="h4-over-footer">Start your 30-day free trial today. Cancel or upgrade anytime</h4>
+        <button class="btn-over-footer">BUTTON LABEL</button>
+    </div> 
+</div>
+
+
+   <!-- Footer -->
+   <footer>
+    <div class="row-footer">
+        <div class="footer-col">
+            <h4><i class="fa-sharp fa-solid fa-circle"></i> The Footer</h4>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="#"><span>2022 The Website, Inc</span></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+                <h4>About</h4>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="#">Team</a></li>
+                <li class="li-footer"><a href="#">Jobs</a></li>
+                <li class="li-footer"><a href="#">Blog</a></li>
+                <li class="li-footer"><a href="#">Press</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Help</h4>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="#">FAQ</a></li>
+                <li class="li-footer"><a href="#">Security</a></li>
+                <li class="li-footer"><a href="#">Terms of service</a></li>
+                <li class="li-footer"><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Connect</h4>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://www.facebook.com/">Facebook</a></li>
+                <li class="li-footer"><a href="https://www.youtube.com/">YouTube</a></li>
+                <li class="li-footer"><a href="https://twitter.com/">Twitter</a></li>
+                <li class="li-footer"><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+            <script src="/src/product-list.js"></script>
+            <script src="/src/product-list-pagination.js"></script>
+            <script src="/src/prod-list-filter-products.js"></script>
+            <script src="/src/prod-list-sort-by-price.js"></script>
+</body>
+
+</html>
