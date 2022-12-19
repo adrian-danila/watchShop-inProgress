@@ -5,9 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Product List</title>
-
-        <link rel="stylesheet" href="/styles/product-list.css">
-
+        <link rel="stylesheet" href="/Testing/product-list-testing.css">
         <!-- <link rel="icon" type="image/x-icon" href="/images/watch.ico"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,87 +75,147 @@
                 <button class="search-button">Search</button>
             </div>
         </div>
-        <!-- Paragraph Browsing -->
-        <p class="browsing-products">Browing products for Rolex - 300 results</p>
-        <!-- Sort by -->
-        <div class="sort-and-results">
-            <div class="sort-and-results-inside">
-                <div class="div-sort">
-                    <h5 class="h5-sort">Sort by</h5>
-                    <select class="select-sort" id="sorting-select">
-                        <option value="price-az">Price: Low to High</option>
-                        <option value="price-za">Price: High to Low</option>
-                    </select>
-                </div>
-                <div class="div-results">
-                    <h5 class="h5-results">Results per page</h5>
-                    <select class="results-select" id="results-select">
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                        <option value="25">25</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <!-- Products -->
-        <div class="products">
-            <div class="products-container">
-                <div class="product-card-wrapper">
-                    <div class="product-card">
-                        <div class="img-product"></div>
-                        <h4 class="title-product">This space is for the product title which can span two rows</h4>
-                        <h5 class="price-product">$0.00</h5>
-                    </div>
-                </div>
-                <div class="product-card-wrapper">
-                    <div class="product-card">
-                        <div class="img-product"></div>
-                        <h4 class="title-product">This space is for the product title which can span two rows</h4>
-                        <h5 class="price-product">$0.00</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="showing-results-big">
-            <div class="showing-results">
-                <div class="div-results">
-                    <h5 class="h5-results">Results per page</h5>
-                    <select class="results-select" id="results-select">
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                        <option value="25">25</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                    </select>
-                </div>
 
-                <div class="page-numbers">
-                    <div class="product-pages">
-                        <h4 class="showing-products">Showing 1-25 of 300 reults</h4>
-                    </div>
-                    <button class="pages">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <button class="pages">
-                        <h5 class="h5-button-pages">1</h5>
-                    </button>
-                    <button class="pages">
-                        <h5 class="h5-button-pages">2</h5>
-                    </button>
-                    <button class="pages">
-                        <h5 class="h5-button-pages">...</h5>
-                    </button>
-                    <button class="pages">
-                        <h5 class="h5-button-pages">50</h5>
-                    </button>
-                    <button class="pages">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+<section class="products-filters">
+
+<!-- Filter Results -->
+    <div class="filter-results">
+        <h5 class="h5-filter-results">Filter Results</h5>
+            <br>
+            <br>
+        <h5 class="brand">Brand</h5>
+        <form>
+            <input type="checkbox" id="pulsar1">
+            <label for="pulsar1">Pulsar</label>
+            <br>
+            <input type="checkbox" id="rolex2">
+            <label for="rolex2">Rolex</label>
+            <br>
+            <input type="checkbox" id="rotary3">
+            <label for="rotary3">Rotary</label>
+            <br>
+            <input type="checkbox" id="seiko4">
+            <label for="seiko4">Seiko</label>
+            <br>
+            <input type="checkbox" id="sekonda5">
+            <label for="sekonda5">Sekonda</label>
+            <br>
+            <input type="checkbox" id="skagen5">
+            <label for="skagen5">Skagen</label>
+        </form>
+
+        <h5 class="gender">Gender</h5>
+            <form>
+                <input type="checkbox" id="woman">
+                <label for="woman">Woman</label>
+                <br>
+                <input type="checkbox" id="man">
+                <label for="man">Man</label>
+            </form>
+
+    </div>
+
+    <div class="item-middle">
+
+        <!-- Paragraph Browsing -->
+       <p class="browsing-products">Browing products for Rolex - 300 results</p>
+
+          <!-- Sort by -->
+       <div class="sort-and-results">
+           <div class="sort-and-results-inside">
+
+               <div class="div-sort">
+                   <h5 class="h5-sort">Sort by</h5>
+                   <select class="select-sort" id="sorting-select">
+                       <option value="price-az">Price: Low to High</option>
+                       <option value="price-za">Price: High to Low</option>
+                   </select>
+               </div>
+
+               <div class="div-results-one">
+                   <h5 class="h5-results">Results per page</h5>
+                   <select class="results-select" id="results-select">
+                       <option value="5">5</option>
+                       <option value="10">10</option>
+                       <option value="25">25</option>
+                       <option value="50">50</option>
+                       <option value="100">100</option>
+                   </select>
+               </div>
+
+           </div>
+       </div>
+
+          <!-- Products -->
+       <div class="products">
+           <div class="products-container">
+               <div class="product-card-wrapper">
+                   <div class="product-card">
+                       <div class="img-product"></div>
+                       <h4 class="title-product">This space is for the product title which can span two rows</h4>
+                       <h5 class="price-product">$0.00</h5>
+                   </div>
+               </div>
+               <div class="product-card-wrapper">
+                   <div class="product-card">
+                       <div class="img-product"></div>
+                       <h4 class="title-product">This space is for the product title which can span two rows</h4>
+                       <h5 class="price-product">$0.00</h5>
+                   </div>
+               </div>
+           </div>
+       </div>
+       
+       <div class="showing-results-big">
+           <div class="showing-results">
+               <div class="div-results">
+                   <h5 class="h5-results">Results per page</h5>
+                   <select class="results-select" id="results-select">
+                       <option value="5">5</option>
+                       <option value="10">10</option>
+                       <option value="25">25</option>
+                       <option value="50">50</option>
+                       <option value="100">100</option>
+                   </select>
+               </div>
+
+               <div class="page-numbers">
+                   <div class="product-pages">
+                       <h4 class="showing-products">Showing 1-25 of 300 reults</h4>
+                   </div>
+                   <button class="pages">
+                       <i class="fa-solid fa-arrow-left"></i>
+                   </button>
+                   <button class="pages">
+                       <h5 class="h5-button-pages">1</h5>
+                   </button>
+                   <button class="pages">
+                       <h5 class="h5-button-pages">2</h5>
+                   </button>
+                   <button class="pages">
+                       <h5 class="h5-button-pages">...</h5>
+                   </button>
+                   <button class="pages">
+                       <h5 class="h5-button-pages">50</h5>
+                   </button>
+                   <button class="pages">
+                       <i class="fa-solid fa-arrow-right"></i>
+                   </button>
+               </div>
+           </div>
+       </div>
+</div>
+
+</section>
+        
+       
+
+   
+ 
+ 
+
+       
+
         <!-- Banner Top Footer -->
         <div class="banner-top-footer">
             <div class="banner-top-footer-content">
