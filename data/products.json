@@ -2,79 +2,84 @@
     {
         "id": 1,
         "image": "https://i.ibb.co/S6cBC0h/Yazole.png",
-        "name": "Black Watch S11",
-        "price": "12.90 lei"
+        "name": "Golden Watch S11",
+        "price": "132.80 lei"
     },
 
     {
         "id": 2,
         "image": "https://i.ibb.co/FYXNgPG/Black-Brown-Watch.png",
-        "name": "White Watch S13",
-        "price": "15.90 lei"
+        "name": "Brown Watch S13",
+        "price": "151.90 lei"
     },
       
     {
         "id": 3,
         "image": "https://i.ibb.co/NFtwdf0/BB2Watch.png",
-        "name": "Yellow Watch S71",
-        "price": "16.87 lei"
+        "name": "Black Watch S71",
+        "price": "165.87 lei"
     },
 
     {
         "id": 4,
         "image": "https://i.ibb.co/S6cBC0h/Yazole.png",
-        "name": "Green Watch S31",
-        "price": "19.20 lei"
+        "name": "Golden Watch S11",
+        "price": "932.80 lei"
     },
 
     {
         "id": 5,
         "image": "https://i.ibb.co/FYXNgPG/Black-Brown-Watch.png",
-        "name": "Blue Watch S21",
-        "price": "16.25 lei"
+        "name": "Brown Watch S13",
+        "price": "351.90 lei"
     },
-
+      
     {
         "id": 6,
         "image": "https://i.ibb.co/NFtwdf0/BB2Watch.png",
-        "name": "Red Watch S8",
-        "price": "14.53 lei"
+        "name": "Black Watch S71",
+        "price": "565.87 lei"
     },
-    
+
     {
         "id": 7,
         "image": "https://i.ibb.co/S6cBC0h/Yazole.png",
-        "name": "Grey Watch S9",
-        "price": "11.15 lei"
+        "name": "Golden Watch S11",
+        "price": "387.10 lei"
     },
+
     {
         "id": 8,
         "image": "https://i.ibb.co/FYXNgPG/Black-Brown-Watch.png",
-        "name": "Brown Watch S19",
-        "price": "19.99 lei"
+        "name": "Brown Watch S13",
+        "price": "1551.25 lei"
     },
+      
     {
         "id": 9,
         "image": "https://i.ibb.co/NFtwdf0/BB2Watch.png",
-        "name": "Black Watch S11",
-        "price": "11.90 lei"
+        "name": "Black Watch S71",
+        "price": "1465.50 lei"
     },
+
     {
         "id": 10,
         "image": "https://i.ibb.co/S6cBC0h/Yazole.png",
-        "name": "Blue Watch S4",
-        "price": "33.40 lei"
+        "name": "Golden Watch S11",
+        "price": "999.90 lei"
     },
+
     {
         "id": 11,
         "image": "https://i.ibb.co/FYXNgPG/Black-Brown-Watch.png",
-        "name": "Green Watch S3",
-        "price": "75.90 lei"
+        "name": "Brown Watch S13",
+        "price": "155.55 lei"
     },
+      
     {
         "id": 12,
         "image": "https://i.ibb.co/NFtwdf0/BB2Watch.png",
-        "name": "Purple Watch S2",
-        "price": "10.05 lei"
+        "name": "Black Watch S71",
+        "price": "495.99 lei"
     }
 ]
