@@ -129,15 +129,60 @@ button {
 }
 
 
-/* --------Breadcrumbs menu ------  */
+/* --------Breadcrumbs navigation ------  */
 
-.breadcrumbs-menu{
-    width: auto;
-    height: 2rem;
-    border: 3px solid cyan;
+.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
     display: flex;
-    align-items: center;
-    padding-left: 20px;
+    background-color: #ffffff;
+}
+
+ul.breadcrumb li {
+    font-size: 14px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #000;
+    content: ">";
+}
+
+ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Image Preview */
+
+.img-big {
+    width: 600px;
+    height: 400px;
+}
+
+.img-preview-box {
+    width: 600px;
+}
+.img-preview-one, .img-preview-two, .img-preview-three, .img-preview-four {
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px 20px 0;
+}
+
+/* Price & Info Box */
+.price-info {
+    width: 300px;
+    height: 300px;
+    border: 1px solid grey;
+}
+
+.table-data {
+    /* border: 1px solid black; */
+}
+
+td {
+    background-color: #B3C4D4;
 }
 
 .img-product {
