@@ -95,48 +95,42 @@ a:hover {
     color: #7AC47E;
 }
 
-/* ---------Style Hero Banner ------------- */
+/* Searchbar */
 
-.hero-container {
-    background-color: #d4c4d4;
+.search-container {
+    background-color: #F7F9FB;
     /* border: 1px solid black; */
     width: auto;
-    height: 5.5rem;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.h2-hero {
-color: white;
-display: flex;
-justify-content: center;
-}
-
-.h4-hero {
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-
-input {
-    width: 40em;
-    height: 2.5em;
+.search-input {
+    width: 550px;
+    height: 38px;
     border: 0;
     outline: none;
     padding-left: 10px;
+    background: #fff;
+    border: 1px solid lightgrey;
 }
 
-button {
-    width: 10em;
-    height: 2.5em;
+.search-input::placeholder {
+color:lightgray;
+}
+
+.search-button {
+    width: 130px;
+    height: 38px;
+    margin-left: 3px;
     background-color: #66BB6A;
     border: 0;
     color: white;
     font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 
@@ -165,8 +159,20 @@ ul.breadcrumb li a {
 }
 
 
-/* Image Preview */
+/* Container Wrapper  */
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
 
+/* Details container */
+.details-container {
+    border: 5px solid yellow;
+    width: 950px;
+}
+
+/* Image Preview */
 .img-big {
     width: 600px;
     height: 400px;
@@ -181,11 +187,59 @@ ul.breadcrumb li a {
     margin: 20px 20px 20px 0;
 }
 
+
+.img-box-data {
+    display: flex;
+}
+
 /* Price & Info Box */
+
+.quantity {
+    display: flex;
+}
+
+.quantity__input {
+    width: 40px;
+    height: 30px;
+}
+
 .price-info {
     width: 300px;
     height: 300px;
-    border: 1px solid grey;
+    margin-left: 20px;
+    box-shadow: 0 0 3px grey;
+    /* border: 1px solid grey; */
+    padding: 20px;
+}
+
+.price-info .product-title {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.btn-cart {
+    width: 260px;
+    height: 35px;
+    border: 0;
+    background-color: var(--customGreen);
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.price-info .product-details, .product-info {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+
+.Box {
+    display: flex;
 }
 
 .table-data {
@@ -220,6 +274,136 @@ td {
 table {
     border: 1px solid black;
 }
+
+/* ---------------Style Section One ---------------- */
+.section-wrapper {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    text-align: center;
+}
+
+.h2-section-title {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.h3-section-title {
+    font-weight: 200;
+    color:var(--customGray);
+    font-size: 15px;
+}
+
+.section-wrapper h2 {
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+
+.section-one {
+    width: auto;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.arrows-section {
+    font-size: 30px;
+    color: #B3C4D4;
+    margin: 15px;
+}
+/* -----Style Cards----- */
+
+.card-large {
+    /* border: 4px solid pink; */
+    height: 400px;
+    width: 420px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgray;
+    text-align: center;
+    margin: 15px
+}
+
+.card-normal {
+    height: 400px;
+    width: 210px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgray;
+    text-align: center;
+    margin: 15px
+}
+
+.card-img {
+background-image: url('/images/black-watch.png');
+}
+
+
+.car-two {
+    background-image: url('/images/watch-for-large-card.png');
+}
+
+.card {
+    background: white;
+    /* border: 1px solid gray; */
+    width: 210px;
+    height: 400px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgrey; 
+}
+
+.card-image {
+    background-color: aqua;
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.car-one {
+    background-image: url('../images/black-watch.png');
+}
+
+.description-watch {
+    margin: 15px;
+}
+
+
+.card a {
+    background-color: white;
+    padding: 10px 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 25px 20px;
+    border: 1px solid gray;
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    /* border: 3px solid red; */
+
+}
+
+.button-card-normal {
+    width: 168px;
+    height: 42px;
+    margin-top: 15px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.button-card-normal a {
+    text-decoration: none;
+}
+
+.button-card-large {
+    margin-top: 40px;
+}
+
 
 
 /* ---------------Style Section One ---------------- */
