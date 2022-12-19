@@ -18,7 +18,7 @@ body {
     background-color: #dfe9f2;
 }
 
-/* Style Header  */
+/* Header */
 
 header {
     display: flex;
@@ -270,7 +270,7 @@ background-image: url('/images/black-watch.png');
 }
 
 .button-card-large {
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 

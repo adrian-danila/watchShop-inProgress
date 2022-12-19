@@ -1,37 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
+:root {
+    --desaturatedBlue:#243142;
+    --customGray:#B3C4D4;
+    --customWhite: #E9EAEB;
+    --customGreen: #66BB6A;
+}
 
 body {
     background-color: #dfe9f2;
-    font-family: "Open Sans", sans-serif;
 }
 
-/* Style for header  */
+/* Header */
 
 header {
     display: flex;
     justify-content: center;
-    background-color: #243143;
     color: #b3c4d4;
+    background-color: #243143;
 }
 
 header .container {
-    height: 3.75rem;
+    height: 58px;
     display: flex;
     justify-content: space-between;
     align-items: center;   
     width: 950px;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 header .logo {
-    margin: 1rem;
+    margin: 16px;
 }
 
 header .logo span{
@@ -45,7 +52,7 @@ header .nav-links {
 }
 
 header li {
-    margin: 1rem;
+    margin: 16px;
 }
 
 header a {
@@ -54,20 +61,19 @@ header a {
 }
 
 
-/*------------- Style for Navbar  -------------*/
-
+/* Navbar  */
 
 nav {
     display: flex;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #ffff;
 }
 
 nav .categories-links-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3.75em;
+    height: 65px;
 }
 
 nav .categories-links {
@@ -79,9 +85,14 @@ nav .categories-links {
 
 nav li a {
     text-decoration: none;
-    font-weight: 600;
-    color: #000;
-    font-size: 14px;
+    font-weight: 500;
+    color: var(--desaturatedBlue);
+    font-size: 13px;
+    margin: 16px;
+}
+
+a:hover {
+    color: #7AC47E;
 }
 
 /* ---------Style Hero Banner ------------- */
