@@ -1,274 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WatchShop</title>
-
-    <link rel="stylesheet" href="/styles/index.css">
-    
-    <link rel="icon" type="image/x-icon" href="/images/watch.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
- 
-</head>
-
-<body>
-
-      <!-- Header -->
-      <header>
-        <div class="container">
-            <div class="logo">
-                <a href="/index.html">
-                    <i class="fa-solid fa-clock"></i>
-                    <span>Watch Shop</span>
-                </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WatchShop</title>
+        <link rel="stylesheet" href="/styles/index.css">
+        <link rel="icon" type="image/x-icon" href="/images/watch.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="/index.html">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Watch Shop</span>
+                    </a>
+                </div>
+                <div class="nav-links-wrapper">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="/cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i> Your Cart <span>0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sign-up.html">
+                                <i class="fa-solid fa-user"></i> Register </a>
+                        </li>
+                        <li>
+                            <a href="/login.html">
+                                <i class="fa-solid fa-right-to-bracket"></i> Login </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="nav-links-wrapper">
-                <ul class="nav-links">
+        </header>
+        <!-- Navbar -->
+        <nav>
+            <div class="categories-links-wrapper">
+                <ul class="categories-links">
                     <li>
-                        <a href="/cart.html">
-                            <i class="fa-solid fa-cart-shopping"></i> Your Cart <span>0</span>
-                        </a>
+                        <a href="index.html">Category 1</a>
                     </li>
                     <li>
-                        <a href="/sign-up.html">
-                            <i class="fa-solid fa-user"></i> Register </a>
+                        <a href="product-list.html">Product List</a>
                     </li>
                     <li>
-                        <a href="/login.html">
-                            <i class="fa-solid fa-right-to-bracket"></i> Login </a>
+                        <a href="index.html">Category 3</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Category 4</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Category 5</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Category 6</a>
                     </li>
                 </ul>
             </div>
+        </nav>
+        <!-- Hero Banner with SearchBar  -->
+        <div class="hero-container">
+            <div class="inner-container">
+                <h2 class="h2-hero">Hero image headline text goes here. <br>Promote a product and the follow with a call to action! <br>
+                </h2>
+                <h4 class="h4-hero">Subtitle with a call to action label goes here.</h4>
+                <form method="get" action="/product-list.html">
+                    <input type="search" class="input-hero" placeholder="Value">
+                    <button type="search" value="search">SEARCH</button>
+                </form>
+            </div>
         </div>
-    </header>
-
-    <!-- Navbar -->
-    <nav>
-        <div class="categories-links-wrapper">
-            <ul class="categories-links">
-                <li>
-                    <a href="index.html">Category 1</a>
-                </li>
-                <li>
-                    <a href="product-list.html">Product List</a>
-                </li>
-                <li>
-                    <a href="index.html">Category 3</a>
-                </li>
-                <li>
-                    <a href="index.html">Category 4</a>
-                </li>
-                <li>
-                    <a href="index.html">Category 5</a>
-                </li>
-                <li>
-                    <a href="index.html">Category 6</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-<!-- Hero Banner with search bar  -->
-
-    <div class="hero-container">
-        <div class="inner-container">
-            <h2 class="h2-hero">Hero image headline text goes here.<br>Promote a product and the follow with a call to action!<br></h2>
-            <h4 class="h4-hero">Subtitle with a call to action label goes here.</h4>
-            <form method="get" action="/product-list.html">
-                <input type="search" class="input-hero" placeholder="Value">
-                <button type="search" value="search">SEARCH</button>
-            </form>
-        </div>
-    </div>
-
-
-    <!-- Section Wrapper  -->
-
-    <section class="section-wrapper">
-        <div class="div-wrapper">
-            <h2 class="h2-section-title">Section Title</h2>
-            <h3 class="h3-section-title">Subtitle with a call to action label goes here.</h3>
-        </div>
-    </section>
-
+        <!-- Section Wrapper One -->
+        <section class="section-wrapper">
+            <div class="div-wrapper">
+                <h2 class="h2-section-title">Section Title</h2>
+                <h3 class="h3-section-title">Subtitle with a call to action label goes here.</h3>
+            </div>
+        </section>
         <div class="section-one">
-            <span class="arrows-section"><i class="fa-solid fa-arrow-left"></i></span>
-
+            <span class="arrows-section">
+                <i class="fa-solid fa-arrow-left"></i>
+            </span>
             <div class="card-large">
                 <div class="card-image car-two"></div>
                 <p class="description-watch">Heading for Full Width Story Will Display Here</p>
-                <button class="button-card-normal button-card-large"><a href="/product-details.html">View more</a></button>
+                <button class="button-card-normal button-card-large">
+                    <a href="/product-details.html">View more</a>
+                </button>
             </div>
-            
             <div class="card-normal">
                 <div class="card-image card-img"></div>
                 <p class="description-watch">Heading for Full Width Story Will Display Here</p>
-                <button class="button-card-normal"><a href="/product-details.html">View more</a></button>
+                <button class="button-card-normal">
+                    <a href="/product-details.html">View more</a>
+                </button>
             </div>
-
             <div class="card-normal">
                 <div class="card-image card-img"></div>
                 <p class="description-watch">Heading for Full Width Story Will Display Here</p>
-                <button class="button-card-normal"><a href="/product-details.html">View more</a></button>
+                <button class="button-card-normal">
+                    <a href="/product-details.html">View more</a>
+                </button>
             </div>
-          <span class="arrows-section"><i class="fa-solid fa-arrow-right"></i></span>
+            <span class="arrows-section">
+                <i class="fa-solid fa-arrow-right"></i>
+            </span>
         </div>
-
-
         <!-- Section Two  -->
-
-    <div class="section-two">
-        <p id="p-section-two">Hero image headline text goes here.
-            <br>Promote a product and then follow with a call to action</p>
+        <div class="section-two">
+            <p id="p-section-two">Hero image headline text goes here. <br>Promote a product and then follow with a call to action </p>
             <button tpye="submit">Button label</button>
-    </div>
-
-    <!-- Cards section three  -->
-
-    <section class="section-wrapper">
-        <div class="div-wrapper">
-            <h2>Section Title</h2>
-            <h3>Subtitle with a call to action label goes here.</h3>
         </div>
-    </section>
-
+        <!-- Cards section three  -->
+        <section class="section-wrapper">
+            <div class="div-wrapper">
+                <h2>Section Title</h2>
+                <h3>Subtitle with a call to action label goes here.</h3>
+            </div>
+        </section>
         <div class="section-one">
-            <span class="arrows-section"><i class="fa-solid fa-arrow-left"></i></span>
-
+            <span class="arrows-section">
+                <i class="fa-solid fa-arrow-left"></i>
+            </span>
             <div class="card-normal">
                 <div class="card-image card-img"></div>
                 <p class="description-watch">Heading for Full Width Story Will Display Here</p>
-                <button class="button-card-normal"><a href="/product-details.html">View more</a></button>
+                <button class="button-card-normal">
+                    <a href="/product-details.html">View more</a>
+                </button>
             </div>
-
             <div class="card-normal">
                 <div class="card-image card-img"></div>
                 <p class="description-watch">Heading for Full Width Story Will Display Here</p>
-                <button class="button-card-normal"><a href="/product-details.html">View more</a></button>
+                <button class="button-card-normal">
+                    <a href="/product-details.html">View more</a>
+                </button>
             </div>
-
             <div class="card-normal">
                 <div class="card-image card-img"></div>
                 <p class="description-watch">Heading for Full Width Story Will Display Here</p>
-                <button class="button-card-normal"><a href="/product-details.html">View more</a></button>
+                <button class="button-card-normal">
+                    <a href="/product-details.html">View more</a>
+                </button>
             </div>
-
             <div class="card-normal">
                 <div class="card-image card-img"></div>
                 <p class="description-watch">Heading for Full Width Story Will Display Here</p>
-                <button class="button-card-normal"><a href="/product-details.html">View more</a></button>
+                <button class="button-card-normal">
+                    <a href="/product-details.html">View more</a>
+                </button>
             </div>
-              
-          <span class="arrows-section"><i class="fa-solid fa-arrow-right"></i></span>
+            <span class="arrows-section">
+                <i class="fa-solid fa-arrow-right"></i>
+            </span>
         </div>
-    
-    <div class="section-three">
-        <div class="grid">
-            <h5 class="h5-grid">Section title</h5>
+        <div class="section-three">
+            <div class="grid">
+                <h5 class="h5-grid">Section title</h5>
                 <p class="p-grid">Subtitle with a call to action label goes here</p>
-            <div class="show-watches">
-                <div class="container-img"></div>
-                <div class="container-img"></div>
-                <div class="container-img"></div>
-                <div class="container-img"></div>
-                <div class="container-img"></div>
-                <div class="container-img"></div>
-                <div class="container-img"></div>
-                <div class="container-img"></div>
+                <div class="show-watches">
+                    <div class="container-img"></div>
+                    <div class="container-img"></div>
+                    <div class="container-img"></div>
+                    <div class="container-img"></div>
+                    <div class="container-img"></div>
+                    <div class="container-img"></div>
+                    <div class="container-img"></div>
+                    <div class="container-img"></div>
+                </div>
             </div>
         </div>
-    </div>
-
- <!-- Banner Top Footer -->
- <div class="banner-top-footer">
-    <div class="banner-top-footer-content">
-        <h4 class="h4-banner-top-footer">Start your 30-day free trial today. Cancel or upgrade anytime</h4>
-        <button class="btn-banner-top-footer">Button Label</button>
-    </div>
-</div>
-<!-- Footer -->
-<footer>
-    <div class="row-footer">
-        <div class="footer-col">
-            <h4 class="title-columns">
-                <i class="fa-sharp fa-solid fa-circle"></i> The Footer
-            </h4>
-            <ul class="ul-footer">
-                <li class="li-footer">
-                    <a href="#">
-                        <span>2022 The Website, Inc</span>
-                    </a>
-                </li>
-            </ul>
+        <!-- Banner Top Footer -->
+        <div class="banner-top-footer">
+            <div class="banner-top-footer-content">
+                <h4 class="h4-banner-top-footer">Start your 30-day free trial today. Cancel or upgrade anytime</h4>
+                <button class="btn-banner-top-footer">Button Label</button>
+            </div>
         </div>
-        <div class="footer-col">
-            <h4 class="title-columns">About</h4>
-            <ul class="ul-footer">
-                <li class="li-footer">
-                    <a href="#">Team</a>
-                </li>
-                <li class="li-footer">
-                    <a href="#">Jobs</a>
-                </li>
-                <li class="li-footer">
-                    <a href="#">Blog</a>
-                </li>
-                <li class="li-footer">
-                    <a href="#">Press</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4 class="title-columns">Help</h4>
-            <ul class="ul-footer">
-                <li class="li-footer">
-                    <a href="#">FAQ</a>
-                </li>
-                <li class="li-footer">
-                    <a href="#">Security</a>
-                </li>
-                <li class="li-footer">
-                    <a href="#">Terms of service</a>
-                </li>
-                <li class="li-footer">
-                    <a href="#">Privacy Policy</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4 class="title-columns">Connect</h4>
-            <ul class="ul-footer">
-                <li class="li-footer">
-                    <a href="https://www.facebook.com/">Facebook</a>
-                </li>
-                <li class="li-footer">
-                    <a href="https://www.youtube.com/">YouTube</a>
-                </li>
-                <li class="li-footer">
-                    <a href="https://twitter.com/">Twitter</a>
-                </li>
-                <li class="li-footer">
-                    <a href="https://www.instagram.com/">Instagram</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-<!-- 
-    <script src="/src/product-list.js"></script>
-    <script src="/src/product-list-pagination.js"></script>
-    <script src="/src/prod-list-filter-products.js"></script>
-    <script src="/src/prod-list-sort-by-price.js"></script> 
+        <!-- Footer -->
+        <footer>
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4 class="title-columns">
+                        <i class="fa-sharp fa-solid fa-circle"></i> The Footer
+                    </h4>
+                    <ul class="ul-footer">
+                        <li class="li-footer">
+                            <a href="#">
+                                <span>2022 The Website, Inc</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="title-columns">About</h4>
+                    <ul class="ul-footer">
+                        <li class="li-footer">
+                            <a href="#">Team</a>
+                        </li>
+                        <li class="li-footer">
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li class="li-footer">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="li-footer">
+                            <a href="#">Press</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="title-columns">Help</h4>
+                    <ul class="ul-footer">
+                        <li class="li-footer">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="li-footer">
+                            <a href="#">Security</a>
+                        </li>
+                        <li class="li-footer">
+                            <a href="#">Terms of service</a>
+                        </li>
+                        <li class="li-footer">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="title-columns">Connect</h4>
+                    <ul class="ul-footer">
+                        <li class="li-footer">
+                            <a href="https://www.facebook.com/">Facebook</a>
+                        </li>
+                        <li class="li-footer">
+                            <a href="https://www.youtube.com/">YouTube</a>
+                        </li>
+                        <li class="li-footer">
+                            <a href="https://twitter.com/">Twitter</a>
+                        </li>
+                        <li class="li-footer">
+                            <a href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- 
+    <script src="/src/product-list.js"></script><script src="/src/product-list-pagination.js"></script><script src="/src/prod-list-filter-products.js"></script><script src="/src/prod-list-sort-by-price.js"></script> 
 -->
-    </footer>
-
-</body>
-
+        </footer>
+    </body>
 </html>

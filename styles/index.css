@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap");
 
 * {
     margin: 0;
@@ -8,10 +8,10 @@
 }
 
 :root {
-    --desaturatedBlue:#243142;
-    --customGray:#B3C4D4;
-    --customWhite: #E9EAEB;
-    --customGreen: #66BB6A;
+    --desaturatedBlue: #243142;
+    --customGray: #b3c4d4;
+    --customWhite: #e9eaeb;
+    --customGreen: #66bb6a;
 }
 
 body {
@@ -31,7 +31,7 @@ header .container {
     height: 58px;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
     width: 950px;
     font-size: 14px;
     font-weight: 300;
@@ -41,14 +41,13 @@ header .logo {
     margin: 16px;
 }
 
-header .logo span{
+header .logo span {
     text-transform: uppercase;
 }
 
 header .nav-links {
     list-style: none;
     display: flex;
-    
 }
 
 header li {
@@ -59,7 +58,6 @@ header a {
     text-decoration: none;
     color: #b3c4d4;
 }
-
 
 /* Navbar  */
 
@@ -92,10 +90,10 @@ nav li a {
 }
 
 a:hover {
-    color: #7AC47E;
+    color: #7ac47e;
 }
 
-/* ---------Style Hero Banner ------------- */
+/* ---------Hero Banner With SearchBar ------------- */
 
 .hero-container {
     background-image: url(/images/hero-banner-hand-watch.jpg);
@@ -107,7 +105,6 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-
 
 .h2-hero {
     color: white;
@@ -126,7 +123,6 @@ a:hover {
     font-weight: 400;
 }
 
-
 input {
     width: 40em;
     height: 2.5em;
@@ -138,13 +134,14 @@ input {
 button {
     width: 10em;
     height: 2.5em;
-    background-color: #66BB6A;
+    background-color: #66bb6a;
     border: 0;
     color: white;
     font-weight: bold;
 }
 
-/* ---------------Style Section One ---------------- */
+/* Section Wrapper One */
+
 .section-wrapper {
     display: flex;
     background-color: #ffffff;
@@ -152,22 +149,20 @@ button {
     text-align: center;
 }
 
-.h2-section-title {
+.section-wrapper h2 {
+    margin-top: 40px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 400;
 }
 
-.h3-section-title {
+.section-wrapper h3 {
     font-weight: 200;
-    color:var(--customGray);
+    color: var(--customGray);
     font-size: 15px;
 }
 
-.section-wrapper h2 {
-    margin-top: 40px;
-    font-size: 15px;
-}
-
+/* Section One */
 
 .section-one {
     width: auto;
@@ -180,10 +175,9 @@ button {
 
 .arrows-section {
     font-size: 30px;
-    color: #B3C4D4;
+    color: #b3c4d4;
     margin: 15px;
 }
-/* -----Style Cards----- */
 
 .card-large {
     /* border: 4px solid pink; */
@@ -193,7 +187,11 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 10px lightgray;
     text-align: center;
-    margin: 15px
+    margin: 15px;
+}
+
+.button-card-large {
+    margin-top: 40px;
 }
 
 .card-normal {
@@ -203,58 +201,7 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 10px lightgray;
     text-align: center;
-    margin: 15px
-}
-
-.card-img {
-background-image: url('/images/black-watch.png');
-}
-
-
-.car-two {
-    background-image: url('/images/watch-for-large-card.png');
-}
-
-.card {
-    background: white;
-    /* border: 1px solid gray; */
-    width: 210px;
-    height: 400px;
     margin: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px lightgrey; 
-}
-
-.card-image {
-    background-color: aqua;
-    height: 250px;
-    margin-bottom: 15px;
-    background-size: cover;
-    border-radius: 5px;
-}
-
-.car-one {
-    background-image: url('../images/black-watch.png');
-}
-
-.description-watch {
-    margin: 15px;
-}
-
-
-.card a {
-    background-color: white;
-    padding: 10px 15px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 25px 20px;
-    border: 1px solid gray;
-    color: gray;
-    font-weight: bold;
-    text-decoration: none;
-    /* border: 3px solid red; */
-
 }
 
 .button-card-normal {
@@ -269,12 +216,55 @@ background-image: url('/images/black-watch.png');
     text-decoration: none;
 }
 
-.button-card-large {
-    margin-top: 40px;
+.card-img {
+    background-image: url("/images/black-watch.png");
 }
 
+.car-two {
+    background-image: url("/images/watch-for-large-card.png");
+}
 
-/* ----------Section two ------------- */
+.card {
+    background: white;
+    /* border: 1px solid gray; */
+    width: 210px;
+    height: 400px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgrey;
+}
+
+.card-image {
+    background-color: aqua;
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.car-one {
+    background-image: url("../images/black-watch.png");
+}
+
+.description-watch {
+    margin: 15px;
+}
+
+.card a {
+    background-color: white;
+    padding: 10px 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 25px 20px;
+    border: 1px solid gray;
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    /* border: 3px solid red; */
+}
+
+/* Section Two  */
 
 .section-two {
     width: auto;
@@ -288,19 +278,19 @@ background-image: url('/images/black-watch.png');
     background-position: center;
 }
 
-#p-section-two {
+.section-two p {
     color: white;
 }
 
 /* ------Section three ------  */
 
-.grid h5,p {
+.grid h5,
+p {
     display: flex;
     justify-content: center;
     /* align-items: center; */
     /* font-size: 2em; */
 }
-
 
 .h5-grid {
     margin-top: 50px;
@@ -312,22 +302,20 @@ background-image: url('/images/black-watch.png');
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F7F9FB;
+    background-color: #f7f9fb;
 }
-
-
 
 .show-watches {
     display: grid;
     grid-template-rows: repeat(2, 150px);
     grid-template-columns: repeat(4, 200px);
-    margin: 30px; 
+    margin: 30px;
     /* border: 5px solid black; */
     justify-items: stretch;
     align-items: stretch;
     justify-content: center;
     gap: 40px 50px;
-    background-color: #F6F9FB;
+    background-color: #f6f9fb;
 }
 
 .container-img {
@@ -337,7 +325,6 @@ background-image: url('/images/black-watch.png');
     border-radius: 5px;
     box-shadow: 0 0 10px lightgrey;
 }
-
 
 /* Banner Top Footer */
 
@@ -368,11 +355,9 @@ background-image: url('/images/black-watch.png');
     border: 0;
     text-transform: uppercase;
     background-color: var(--customGreen);
-    color: #FFFFFF;)
+    color: #ffffff;
     letter-spacing: 0.5px;
-
 }
-
 
 /* -----Footer----- */
 
@@ -403,7 +388,6 @@ footer .row-footer {
     align-items: center;
     flex-wrap: wrap;
     width: 1000px;
-     
 }
 
 .li-footer a {
