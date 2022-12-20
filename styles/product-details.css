@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap");
 
 * {
     margin: 0;
@@ -8,14 +8,19 @@
 }
 
 :root {
-    --desaturatedBlue:#243142;
-    --customGray:#B3C4D4;
-    --customWhite: #E9EAEB;
-    --customGreen: #66BB6A;
+    --desaturatedBlue: #243142;
+    --customGray: #b3c4d4;
+    --customWhite: #e9eaeb;
+    --customGreen: #66bb6a;
 }
 
 body {
     background-color: #dfe9f2;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* Header */
