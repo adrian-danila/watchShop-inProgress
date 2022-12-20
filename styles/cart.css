@@ -94,27 +94,80 @@ nav li a {
 a:hover {
     color: #7AC47E;
 }
-/* ---------------------------------- */
 
-.basket {
+/* Container Product  */
+.container-product {
+    background-color: #FFFFFF;
     display: flex;
-    width: auto;
-    height: 500px;
-    border: 2px solid green;
+    justify-content: center;
+}
+/* Cart Items Details  */
+
+.small-container {
+    width: 1000px;
 }
 
-.imgProduct {
-  
+.cart-page {
+    margin: 80x auto;
 }
 
-img {
-    width: 120px;
-    height: 120px;
-    background-size: cover;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+th {
+    text-align: left;
+    padding: 5px;
+    color: #FFFFFF;
+    background-color: var(--desaturatedBlue);
+    font-weight: 400;
+}
 
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color:var(--desaturatedBlue);
+    font-size: 13px;
+}
+
+.img-product-cart {
+    width: 80px;
+    height: 80px;
+    margin: 10px
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid var(--desaturatedBlue);
+    max-width: 400px;
+    
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
 /* Banner Top Footer */
 
 .banner-top-footer {
