@@ -18,6 +18,11 @@ body {
     background-color: #dfe9f2;
 }
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* Header */
 
 header {
@@ -32,7 +37,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 950px;
+    width: 1000px;
     font-size: 14px;
     font-weight: 300;
 }
@@ -78,7 +83,7 @@ nav .categories-links {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    width: 950px;
+    width: 1000px;
 }
 
 nav li a {

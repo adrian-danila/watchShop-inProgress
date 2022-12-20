@@ -11,7 +11,13 @@ function generateProductHTML({id, image, name, price}) {
     return `
         <div class="product-card-wrapper" data-id=${id}>
             <div class="product-card">
-                <img class="product-image" src="${image}" alt="${name}">
+                <div class="product-image-wrapper">
+                    <img class="product-image" src="${image}" alt="${name}">
+                    <div class="buttons-container">
+                        <button>View details</button>
+                        <button class="add-to-cart-button">Add to cart</button>
+                    </div>
+                </div>
                 <h4 class="product-name">${name}</h4>
                 <h5 class="product-price">${price}</h5>
             </div>
@@ -22,6 +28,18 @@ function generateProductHTML({id, image, name, price}) {
 async function getProducts(){
     const response = await fetch('../data/products.json');
     return await response.json();
+}
+
+async function getProductById(id) {
+    const response = await fetch('../data/products.json');
+    const products = await response.json();
+    const searchedProducts = products.filter((product) => product.id === Number(id));
+    return searchedProducts.length > 0 ? searchedProducts[0] : null;
+}
+
+function addProduct(product) {
+    addProductToLS(product);
+    updateShoppingCartQuantity();
 }
 
 async function addProductsToContainer() {
@@ -36,6 +54,22 @@ async function addProductsToContainer() {
         if(index < productsPerPage)
             productsContainer.innerHTML += generateProductHTML(product);
     });
+
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+
+    [...addToCartButtons].map((addToCartButton) => addToCartButton.addEventListener('click', async (e) => {
+        // e.target ne este butonul, butonul pe care dam click, adica butonul din dom
+        // exemplificare
+        // console.log(e.target);
+        // e.target.closest('.product-card-wrapper') cauta cel mai apropiat element cu clasa .product-card-wrapper
+        // de butonul nostru
+        const productCardWrapper = e.target.closest('.product-card-wrapper');
+        // luam id-ul din dataset
+        const productId = productCardWrapper.dataset.id;
+        const product = await getProductById(productId);
+        // console.log(product);
+        addProduct(product);
+    }));
 }
 
 searchButton.addEventListener('click', async function() {
@@ -46,7 +80,7 @@ searchButton.addEventListener('click', async function() {
 
 resultsSelect.addEventListener('change', async function(event) {
     productsPerPage = event.target.value;
-    addProductsToContainer();
+    await addProductsToContainer();
 });
 
 window.addEventListener('DOMContentLoaded', async function() {
