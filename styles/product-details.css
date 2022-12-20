@@ -173,7 +173,7 @@ ul.breadcrumb li a {
 
 /* Details container */
 .details-container {
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
     width: 1000px;
 }
 
