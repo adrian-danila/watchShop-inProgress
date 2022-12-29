@@ -12,6 +12,7 @@
     --customGray: #b3c4d4;
     --customWhite: #e9eaeb;
     --customGreen: #66bb6a;
+    --customYellow: #FBC02D;
 }
 
 body {
@@ -291,7 +292,7 @@ color:lightgray;
 }
 
 .buttons-container button:first-of-type{
-    border: 2px solid var(--customGreen);
+    border: 1px solid #FBC02D;
 }
 
 .buttons-container button:last-of-type{
