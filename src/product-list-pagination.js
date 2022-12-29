@@ -1,6 +1,6 @@
 // Products Pagination
 
-const itemPerPage = 6;
+const itemPerPage = 5;
 let currentPage = 1;
 
 generateProducts([...products].splice(0,itemPerPage));

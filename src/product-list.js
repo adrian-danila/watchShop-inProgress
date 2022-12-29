@@ -1,127 +1,88 @@
 
-// Fetch data from jsonFile
+let products = [];
+let productsPerPage = 5;
+let numberPage = 1;
+let searchTerm = '';
+let sortPriceAsc = true;
+const searchButton = document.querySelector('.search-button');
+const resultsSelect = document.querySelector('.results-select');
 
-// let products = [];
+function generateProductHTML({id, image, name, price}) {
+    return `
+        <div class="product-card-wrapper" data-id=${id}>
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img class="product-image" src="${image}" alt="${name}">
+                    <div class="buttons-container">
+                        <button>View details</button>
+                        <button class="add-to-cart-button">Add to cart</button>
+                    </div>
+                </div>
+                <h4 class="product-name">${name}</h4>
+                <h5 class="product-price">${price}</h5>
+            </div>
+        </div>
+    `
+}
 
-// const endpointUrl = "/data/products.json";
+async function getProducts(){
+    const response = await fetch('../data/products.json');
+    return await response.json();
+}
 
+async function getProductById(id) {
+    const response = await fetch('../data/products.json');
+    const products = await response.json();
+    const searchedProducts = products.filter((product) => product.id === Number(id));
+    return searchedProducts.length > 0 ? searchedProducts[0] : null;
+}
 
-// fetch(endpointUrl)
-// .then((res) => {
-//     return res.json();
-// })
-// .then((productsRes) => {
-//     products = productsRes;
-//     generateProducts(products);
-// });
+function addProduct(product) {
+    addProductToLS(product);
+    updateShoppingCartQuantity();
+}
 
-// //  -----------------Generate Products----------------
+async function addProductsToContainer() {
+    const productsContainer = document.querySelector('.products-container');
+    productsContainer.innerHTML = "";
 
-// productsContainer = document.getElementById('products1');
+    products = await getProducts();
+    
+    products = products.filter((product) => product.name.includes(searchTerm));
+    
+    products.map((product, index) => {
+        if(index < productsPerPage)
+            productsContainer.innerHTML += generateProductHTML(product);
+    });
 
-// function createProducts (avatar, name, price, id) {
-// const productArticle = document.createElement('article');
-// const imgEl = document.createElement('img');
-// const nameEl = document.createElement('div');
-// const priceEl = document.createElement('div');
-// const buttonEl = document.createElement('button');
-// const buttonElText = document.createElement('a');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
 
-// const buttonCart = document.createElement('button');
-// const buttonCartText = document.createElement('a');
-// productArticle.classList.add("articleClass");
+    [...addToCartButtons].map((addToCartButton) => addToCartButton.addEventListener('click', async (e) => {
+        // e.target ne este butonul, butonul pe care dam click, adica butonul din dom
+        // exemplificare
+        // console.log(e.target);
+        // e.target.closest('.product-card-wrapper') cauta cel mai apropiat element cu clasa .product-card-wrapper
+        // de butonul nostru
+        const productCardWrapper = e.target.closest('.product-card-wrapper');
+        // luam id-ul din dataset
+        const productId = productCardWrapper.dataset.id;
+        const product = await getProductById(productId);
+        // console.log(product);
+        addProduct(product);
+    }));
+}
 
-// nameEl.classList.add("nameElClass");
-// priceEl.classList.add("priceElClass");
-// buttonCartText.classList.add("add-cart");
+searchButton.addEventListener('click', async function() {
+    const searchInput = document.querySelector('.search-input');
+    searchTerm = searchInput.value;
+    await addProductsToContainer();
+});
 
+resultsSelect.addEventListener('change', async function(event) {
+    productsPerPage = event.target.value;
+    await addProductsToContainer();
+});
 
-// imgEl.src = avatar;
-// nameEl.textContent = name;
-// priceEl.textContent = price;
-
-// buttonElText.textContent = "View More";
-// buttonElText.href =`product-details.html?id=${id}`;
-// buttonCartText.textContent = "Add Cart";
-// buttonCartText.href="#";
-
-// productArticle.appendChild(imgEl);
-// productArticle.appendChild(nameEl);
-// productArticle.appendChild(priceEl);
-// productArticle.appendChild(buttonEl);
-// buttonEl.appendChild(buttonElText);
-// productArticle.appendChild(buttonCart);
-// buttonCart.appendChild(buttonCartText);
-// productsContainer.appendChild(productArticle);
-
-// //Cart function
-
-// let carts = document.querySelectorAll('.add-cart');
-
-// for (let i=0; i < carts.length;i++) {
-//     carts[i].addEventListener('click', () => {
-//        cartNumbers();
-//     })
-// }
-
-// function onLoadCartNumbers() {
-//     let productNumbers = localStorage.getItem('cartNumbers');
-
-//     if(productNumbers) {
-//         document.querySelector('.nav-links span').textContent = productNumbers;
-//     }
-// }
-
-// function cartNumbers() {
-//     // console.log('The product clicked is', products);
-//     let productNumbers = localStorage.getItem('cartNumbers');
-//     // console.log(productNumbers);
-//     productNumbers = parseInt(productNumbers);
-//     // console.log(typeof productNumbers);
-
-//     if (productNumbers) {
-//         localStorage.setItem('cartNumbers', productNumbers + 1);
-//         document.querySelector('.nav-links span').textContent = productNumbers;
-//     } else  {
-//         localStorage.setItem('cartNumbers', 1);
-//         document.querySelector('.nav-links span').textContent = 1;
-//     }
-//     setItems(products);   
-// }
-
-// function setItems(products) {
-//     // console.log('inside of this function');
-//     // console.log('my product is', products);
-//     let cartItems = localStorage .getItem('productsInCart')
-//     cartItems = JSON.parse(cartItems);
-//     console.log("my Cart", cartItems);
-
-//     if(cartItems != null) {
-//         cartItems[products.product_name].inCart += 1;
-//     }
-
-//     products.inCart = 1;
-//         cartItems = {
-//         [products.product_name]: products
-//     }
-//     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
-// }
-
-// onLoadCartNumbers();
-
-
-// }
-
-// // const {avatar, product_name, product_price,id} = products;
-
-
-// function generateProducts(productsL) {
-//     productsContainer.innerHTML = ''; // Erase container and after render the results
-//     for (const product of productsL ) {
-//         createProducts(product.avatar, product.product_name, product.product_price, product.id);
-//     }
-// }
-// generateProducts(products);
-
-
-
+window.addEventListener('DOMContentLoaded', async function() {
+    await addProductsToContainer();
+});
