@@ -381,25 +381,18 @@ padding: 0 0 20px;
     color: var(--customGray);
 }
 
-/* ------Section four ------  */
-.grid h5,
-p {
+/* Section four  */
+
+.section-four {
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* font-size: 2em; */
+    flex-direction: column;
+    width: auto;
+    height: 560px;
+    background-color: #f7f9fb;
+    /* border: 1px solid black; */
 }
 
-.h5-grid {
-    margin-top: 50px;
-}
-.section-four {
-    width: auto;
-    height: 35rem;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section-four .section-wrapper {
     background-color: #f7f9fb;
 }
 
