@@ -1,6 +1,6 @@
 
 let products = [];
-let productsPerPage = 5;
+let productsPerPage = 10;
 let numberPage = 1;
 let searchTerm = '';
 let sortPriceAsc = true;
@@ -72,6 +72,9 @@ async function addProductsToContainer() {
     }));
 }
 
+
+// Input search 
+
 searchButton.addEventListener('click', async function() {
     const searchInput = document.querySelector('.search-input');
     searchTerm = searchInput.value;
@@ -86,3 +89,4 @@ resultsSelect.addEventListener('change', async function(event) {
 window.addEventListener('DOMContentLoaded', async function() {
     await addProductsToContainer();
 });
+
