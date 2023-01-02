@@ -22,6 +22,7 @@ https://adrian-shop.netlify.app/
 - Search function in Product List page
 - Add to cart function - (50% finalised)
 - Login / Register function with Local Storage
+- And many more in progress
 
 
 ## Screenshots 
