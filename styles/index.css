@@ -207,6 +207,8 @@ button {
     font-size: 13px;
 }
 
+
+
 .section-one .card-large {
     width: 420px;
 }
@@ -251,6 +253,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--customGray);
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* Section Two  */
@@ -311,7 +316,6 @@ button {
     font-size: 13px;
 }
 
-
 .section-three .card img {
     background-color: aqua;
     height: 150px;
@@ -362,6 +366,36 @@ button {
     align-items: center;
 }
 
+ .section-three .card2 {
+    height: 350px;
+    /* width: 50px; */
+    /* border: 5px solid green; */
+}
+
+.section-three .card2 p {
+    text-align: center;
+    padding: 15px 15px 5px; 
+    justify-content: center;
+}
+
+.section-three .container2 {
+    
+}
+
+.card2 .container2 {
+    height: calc(350px - 150px);
+}
+
+.card2 .button-wrapper {
+    /* border: 5px solid yellow; */
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.card2 .button-wrapper a {
+    color: var(--customGray);
+}
 /* ------Section four ------  */
 
 .grid h5,
