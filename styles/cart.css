@@ -12,6 +12,8 @@
     --customGray: #b3c4d4;
     --customWhite: #e9eaeb;
     --customGreen: #66bb6a;
+    --customYellow: #FBC02D;
+    --customMask:rgba(36, 49, 66, 0.5);
 }
 
 body {
@@ -22,7 +24,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 }
-
 
 /* Header */
 
@@ -37,7 +38,7 @@ header .container {
     height: 58px;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
     width: 1000px;
     font-size: 14px;
     font-weight: 300;
@@ -47,14 +48,13 @@ header .logo {
     margin: 16px;
 }
 
-header .logo span{
+header .logo span {
     text-transform: uppercase;
 }
 
 header .nav-links {
     list-style: none;
     display: flex;
-    
 }
 
 header li {
@@ -65,7 +65,6 @@ header a {
     text-decoration: none;
     color: #b3c4d4;
 }
-
 
 /* Navbar  */
 
@@ -98,8 +97,9 @@ nav li a {
 }
 
 a:hover {
-    color: #7AC47E;
+    color: #7ac47e;
 }
+
 
 /* Container Product  */
 .container-product {
