@@ -1,149 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-body {
+:root {
+    --desaturatedBlue:#243142;
+    --customGray:#B3C4D4;
+    --customWhite: #E9EAEB;
+    --customGreen: #66BB6A;
+    --customBgLoginBox: #F7F9FB;
+}
+
+.container {
+   
     display: flex;
-    height: 100vh;
+    height: 500px;
+    width: 900px;
+    box-shadow: 0 0 2px grey;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.side {
+    background-image: url('/images/hand-watch-login.png');
+    width: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    gap: 5%;
+}
+
+.text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 24px;
+}
+
+.text p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.side a{
+    width: 140px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid var(--customGray);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.inputs-name, .inputs-email-password {
+    display: flex;
+}
+
+
+
+.inputs {
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+.sign-up {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.icon-watch {
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    width: 80px;
-    height: 80px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    position: relative;
-    left: 45%;
-}
-.container {
-    max-width: 800px;
+
+.inputs-right {
+    height: auto;
     width: 900px;
-    height: 600px;
-    background: #F6F9FB;
-    box-shadow: 0 0 10px grey;
-}
-
-.title {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--customBgLoginBox);
+    /* border: 1px solid red; */
 }
 
-.container .title {
-    font-size: 1.9rem;
+.inputs-right img {
+    width: 250px;
+}
+
+.form p {
+    font-size: 22px;
     font-weight: 700;
-    position: relative;
+    padding: 10px;
 }
 
-.container .title:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: o;
-    height: 3px;
-    width: 30px;
-}
-
-.container form .user-details {
+.inputs-field {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    /* border: 1px solid black; */
 }
 
-form .user-details .input-box {
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 40px);
-    margin-right: 20px;
-    margin-left: 20px;
-    text-transform: capitalize;
-
+.inputs p {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 0 5px 0;
 }
 
-.user-details .input-box .details {
-    display: inline-block;
-    font-weight: 500;
-    margin-bottom: 5px;
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.user-details .input-box input {
-    height: 45px;
-    width: 100%;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding-left: 15px;
-    font-size: 16px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
+
+.box {
+    width: 250px;
+    height: 35px;
+    border: 1px solid var(--customGray);
+    padding: 5px;
 }
 
-.user-details .input-box input:focus,
-.user-details .input-box input:valid {
-    /* border-color: green; */
-}
-
-form .button {
-    height: 45px;
-    width: 100%;
-    margin: 20px 200px;
-}
-
-form .button input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    color: white;
+#submit {
+    width: 250px;
+    height: 35px;
+    background-color: var(--customGreen);
+    color: white;  
+    font-weight: 700;
+    font-size: 12px;
     text-transform: uppercase;
-    font-weight: bold;
-    background-color: #66BB6A;
+    border: none;
 }
 
-a {
+.form a{
     color: #66BB6A;
-    display: flex;
-    justify-content: center;
-}
-/* Right Side  */
-
-.side {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    align-items: center
-
-}
-
-.side img {
-    width: 450px;
-    height: 450px;
-}
-
-/* -----MediaQueries -----  */
-
-@media (max-width: 584px) {
-    .container {
-        max-width: 100%;
-    }
-
-    form .user-details .input-box {
-        margin-bottom: 15px;
-        width: 100%;
-    }
-
-    .container form .user-details{
-        max-height: 300px;
-        overflow-y: scroll;
-    }
+    font-size: 13px;
+    margin-top: 20px;
 }
