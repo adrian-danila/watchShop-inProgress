@@ -96,10 +96,6 @@ nav li a {
     margin: 16px;
 }
 
-a:hover {
-    color: #7ac47e;
-}
-
 .products-filters {
     background-color: #FFFFFF;
     display: flex;
@@ -253,12 +249,17 @@ color:lightgray;
     align-items: center;
 }
 
-.product-image-wrapper .buttons-container button{
+.product-image-wrapper .buttons-container button, .view {
     opacity: 0;
     visibility: hidden;
 }
 
 .product-image-wrapper:hover .buttons-container button{
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-image-wrapper:hover .buttons-container a {
     opacity: 1;
     visibility: visible;
 }
@@ -277,14 +278,14 @@ color:lightgray;
     gap: 10px;
 }
 
-.buttons-container button{
+.buttons-container button, a {
     width: 250px;
     padding: 10px 0;
     border: 0;
     background: none;
     color: #fff;
 }
-.buttons-container button{
+.buttons-container button, a{
     width: 250px;
     padding: 10px 0;
     border: 0;
@@ -292,12 +293,19 @@ color:lightgray;
     color: #fff;
 }
 
-.buttons-container button:hover{
+.buttons-container a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.buttons-container button:hover, a:hover{
     cursor: pointer;
 }
 
-.buttons-container button:first-of-type{
-    border: 1px solid #FBC02D;
+.buttons-container a:first-of-type {
+    border: 1px solid #FBC02D; 
 }
 
 .buttons-container button:last-of-type{

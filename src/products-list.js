@@ -3,29 +3,32 @@ let products = [];
 let productsPerPage = 10;
 let numberPage = 1;
 let searchTerm = '';
-let sortPriceAsc = true;
+let sortPriceAsc = null;
+
+const searchInput = document.querySelector('.search-input');
 const searchButton = document.querySelector('.search-button');
+const sortingSelect = document.querySelector('.sorting-select');
 const resultsSelect = document.querySelector('.results-select');
 
-function generateProductHTML({id, image, name, price}) {
+function generateProductHTML({ id, image, name, price }) {
     return `
         <div class="product-card-wrapper" data-id=${id}>
             <div class="product-card">
                 <div class="product-image-wrapper">
                     <img class="product-image" src="${image}" alt="${name}">
                     <div class="buttons-container">
-                        <button>View details</button>
+                        <a href="/product-details.html" class="view">View details</a>
                         <button class="add-to-cart-button">Add to cart</button>
                     </div>
                 </div>
                 <h4 class="product-name">${name}</h4>
-                <h5 class="product-price">${price}</h5>
+                <h5 class="product-price">${price} Lei</h5>
             </div>
         </div>
     `
 }
 
-async function getProducts(){
+async function getProducts() {
     const response = await fetch('../data/products.json');
     return await response.json();
 }
@@ -42,16 +45,58 @@ function addProduct(product) {
     updateShoppingCartQuantity();
 }
 
+function applySearchParams() {
+    const params = new URLSearchParams(window.location.search);
+    const paramSearchTerm = params.get('searchTerm');
+    if(paramSearchTerm) 
+        products = products.filter((product) => product.name.toLowerCase().includes(paramSearchTerm));
+}
+
+function filterProducts() {
+    products = products.filter((product) => product.name.toLowerCase().includes(searchTerm.toLowerCase()));
+}
+
+function compareAsc(a, b) {
+    if (a.price < b.price) {
+        return -1;
+    }
+    if (a.price > b.price) {
+        return 1;
+    }
+    return 0;
+}
+
+function compareDesc(a, b) {
+    if (a.price < b.price) {
+        return 1;
+    }
+    if (a.price > b.price) {
+        return -1;
+    }
+    return 0;
+}
+
+function sortProducts() {
+    if (sortPriceAsc === true) {
+        products = products.sort(compareAsc);
+    }
+    if (sortPriceAsc === false) {
+        products = products.sort(compareDesc);
+    }
+}
+
 async function addProductsToContainer() {
     const productsContainer = document.querySelector('.products-container');
     productsContainer.innerHTML = "";
 
     products = await getProducts();
-    
-    products = products.filter((product) => product.name.includes(searchTerm));
-    
+
+    applySearchParams();
+    filterProducts();
+    sortProducts();
+
     products.map((product, index) => {
-        if(index < productsPerPage)
+        if (index < productsPerPage)
             productsContainer.innerHTML += generateProductHTML(product);
     });
 
@@ -72,21 +117,38 @@ async function addProductsToContainer() {
     }));
 }
 
+searchInput.addEventListener('keydown', async function (event) {
+    if (event.keyCode === 13) {
+        searchTerm = event.target.value;
+        await addProductsToContainer();
+    }
+});
 
-// Input search 
-
-searchButton.addEventListener('click', async function() {
+searchButton.addEventListener('click', async function () {
     const searchInput = document.querySelector('.search-input');
     searchTerm = searchInput.value;
     await addProductsToContainer();
 });
 
-resultsSelect.addEventListener('change', async function(event) {
+sortingSelect.addEventListener('change', async function (event) {
+    if (event.target.value === 'default') {
+        sortPriceAsc = null;
+    }
+    if (event.target.value === "price-az") {
+        sortPriceAsc = true;
+    }
+    if (event.target.value === "price-za") {
+        sortPriceAsc = false;
+    }
+    await addProductsToContainer();
+});
+
+resultsSelect.addEventListener('change', async function (event) {
     productsPerPage = event.target.value;
     await addProductsToContainer();
 });
 
-window.addEventListener('DOMContentLoaded', async function() {
+window.addEventListener('DOMContentLoaded', async function () {
     await addProductsToContainer();
 });
 

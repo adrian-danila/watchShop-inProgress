@@ -108,7 +108,7 @@ a:hover {
     background-position: center;
     background-size: cover;
     width: auto;
-    height: 28.7rem;
+    height: 460px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,29 +128,29 @@ a:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .h4-hero {
     color: white;
     display: flex;
     justify-content: center;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin-top: 40px;
+    margin-bottom: 16px;
     font-weight: 400;
 }
 
 input {
-    width: 40em;
-    height: 2.5em;
+    width: 550px;
+    height: 35px;
     border: 0;
     outline: none;
     padding-left: 10px;
 }
 
 button {
-    width: 10em;
-    height: 2.5em;
+    width: 140px;
+    height: 35px;
     background-color: #66bb6a;
     border: 0;
     color: white;
@@ -183,7 +183,7 @@ button {
 
 .section-one {
     width: auto;
-    height: 30rem;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
