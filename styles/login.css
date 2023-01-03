@@ -12,14 +12,15 @@
     --customGray:#B3C4D4;
     --customWhite: #E9EAEB;
     --customGreen: #66BB6A;
+    --customBgLoginBox: #F7F9FB;
 }
 
 .container {
    
     display: flex;
-    height: 600px;
+    height: 500px;
     width: 900px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 2px grey;
     margin: auto;
     top: 0;
     right: 0;
@@ -28,74 +29,115 @@
     position: absolute;
 }
 
+.side {
+    background-image: url('/images/hand-watch-login.png');
+    width: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    gap: 5%;
+}
+
+.text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 24px;
+}
+
+.text p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.side a{
+    width: 140px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid var(--customGray);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.inputs {
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+.inputs-right {
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--customBgLoginBox);
+    /* border: 1px solid red; */
+}
+
+.inputs-right img {
+    width: 250px;
+}
+
+.form p {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.inputs-field {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+.inputs p {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 0 5px 0;
+}
 
 .form {
     display: flex;
     flex-direction: column;
-    width: 50%;
     align-items: center;
-    background-color: whitesmoke;
-}
-.form h2 {
-    font-size: 2em;
-    margin: 40px;
 }
 
+
 .box {
-    padding: 12px;
     width: 250px;
-    height: 40px;
-    margin: 15px;
-    border: 0.5px solid grey;
-    outline: none;
-    border-radius: 5px;
-    
+    height: 35px;
+    border: 1px solid var(--customGray);
+    padding: 5px;
 }
 
 #submit {
     width: 250px;
-    height: 40px;
-    margin-top: 40px;
-    /* background-color: #66BB6A; */
-    /* color: white;   */
-    font-weight: bold;
-    font-size: 15px;
+    height: 35px;
+    background-color: var(--customGreen);
+    color: white;  
+    font-weight: 700;
+    font-size: 12px;
     text-transform: uppercase;
     border: none;
-    outline: 1px solid;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-/* #submit:hover {
-    cursor: pointer;
-    background-color: black;
-} */
 
 .form a{
-    text-decoration: none;
     color: #66BB6A;
-    font-size: 0.9em;
+    font-size: 13px;
     margin-top: 20px;
-}
-
-.form:hover {
-    color: green;
-}
-
-/* Right Side  */
-
-.side {
-    display: flex;
-    justify-content: center;
-    /* width: 50%; */
-    /* align-items: center */
-
-}
-
-.side img {
-    /* width: 450px; */
-    /* height: 450px; */
 }
