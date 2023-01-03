@@ -19,7 +19,7 @@ https://adrian-shop.netlify.app/
 ## Features
 - Login / Register function with Local Storage
 - Search function on Homepage page
-- Sory by price - ASC and DESC
+- Sort by price - ASC and DESC
 - Filter -> results per page 5/10/25/50 products
 - Search function in Product List page
 - Add to cart function - (50% finalised)
