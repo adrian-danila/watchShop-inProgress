@@ -20,7 +20,7 @@
     display: flex;
     height: 500px;
     width: 900px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 2px grey;
     margin: auto;
     top: 0;
     right: 0;
@@ -30,13 +30,53 @@
 }
 
 .side {
-    height: auto;
-    width: 50%;
+    background-image: url('/images/hand-watch-login.png');
+    width: 450px;
+    height: 100%;
     display: flex;
     justify-content: center;
-    background-image: url(/images/hand-watch-login.png);
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    gap: 5%;
 }
 
+.text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 24px;
+}
+
+.text p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.side a{
+    width: 140px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid var(--customGray);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.inputs {
+    /* border: 1px solid red; */
+    padding: 10px;
+}
 
 .inputs-right {
     height: auto;
@@ -56,11 +96,19 @@
 .form p {
     font-size: 22px;
     font-weight: 700;
+    padding: 10px;
+}
+
+.inputs-field {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
 }
 
 .inputs p {
     font-size: 12px;
     font-weight: 400;
+    padding: 0 0 5px 0;
 }
 
 .form {
@@ -73,6 +121,7 @@
 .box {
     width: 250px;
     height: 35px;
+    border: 1px solid var(--customGray);
     padding: 5px;
 }
 
@@ -85,7 +134,6 @@
     font-size: 12px;
     text-transform: uppercase;
     border: none;
-    outline: 1px solid;
 }
 
 .form a{

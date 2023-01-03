@@ -11,24 +11,38 @@
 <body>
     <div class="container">
         <div class="side">
+                <div class="text">
+                    <h1>IDS Luxury Watches</h1>
+                    <p>Your go to stop place for high quality
+                        wrist accesories & devices!
+                    </p>
+                </div>  
+                <a href="#">For sellers</a>
         </div>
+
         <div class="inputs-right">
                 <img src="/images/logo-watch-login.png">
             <form role="form" class="form" onsubmit="signIn(event);" autocomplete="off">
                 <p>Sign In Below!</p>
+                <div class="inputs-field">
+                    <div class="inputs">
+                        <p>Email Address</p>
+                        <input type="email" name="email" id="email" class="box" placeholder="Enter Email">
+                    </div>
+                    
+                    <div class="inputs">
+                        <p>Password</p>
+                        <input type="password" name="password" class="box" id="pwd" placeholder="******" required>
+                    </div>
+                    
+                    <div class="inputs">
+                        <input type="submit" value="Sign In" id="submit">
+                    </div>
 
-                <div class="inputs">
-                    <p>Email Address</p>
-                    <input type="email" name="email" id="email" class="box" placeholder="Enter Email">
+                    <div class="inputs">
+                        <a href="sign-up.html">Don't have an account? Sign up here!</a>
+                    </div>
                 </div>
-                
-                <div class="inputs">
-                    <p>Password</p>
-                    <input type="password" name="password" class="box" id="pwd" placeholder="Enter Password" required>
-                </div>
-                
-                <input type="submit" value="Sign In" id="submit">
-                <a href="sign-up.html">Don't have an account? Sign up here!</a>
             </form>
         </div>
 

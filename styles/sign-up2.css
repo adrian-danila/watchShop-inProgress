@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200;300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.icon-watch {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 45%;
+}
+.container {
+    max-width: 800px;
+    width: 900px;
+    height: 600px;
+    background: #F6F9FB;
+    box-shadow: 0 0 10px grey;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container .title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.container .title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: o;
+    height: 3px;
+    width: 30px;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 40px);
+    margin-right: 20px;
+    margin-left: 20px;
+    text-transform: capitalize;
+
+}
+
+.user-details .input-box .details {
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    /* border-color: green; */
+}
+
+form .button {
+    height: 45px;
+    width: 100%;
+    margin: 20px 200px;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #66BB6A;
+}
+
+a {
+    color: #66BB6A;
+    display: flex;
+    justify-content: center;
+}
+/* Right Side  */
+
+.side {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center
+
+}
+
+.side img {
+    width: 450px;
+    height: 450px;
+}
+
+/* -----MediaQueries -----  */
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}

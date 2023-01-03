@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="icon" type="image/x-icon" href="/images/watch.ico">
+    <link rel="stylesheet" href="/styles/sign-up2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon-watch">
+            <img src="/images/icon-watch.png">
+        </div>
+        <div class="title">Sign Up Below!</div>
+        <form role="form" onsubmit="signUp(event);" autocomplete="off">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" id="fname" placeholder="Enter your first name" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" id="lname" placeholder="Enter your last name" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Email adress</span>
+                    <input type="email" name="email" id="email" placeholder="Enter your email adress" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" name="password" id="pwd" placeholder="Enter your password" required>
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Sign Up">
+                </div>
+               
+            </div>
+        </form>
+        
+            <a href="login.html" class="a-href">Already have an account? Sign In!</a>
+               
+        <!-- <div class="side">
+            <img src="images/black-watch.png">
+        </div> -->
+    </div>
+    <script src="/src/sign-up.js"></script>
+</body>
+</html>
