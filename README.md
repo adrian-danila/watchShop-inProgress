@@ -28,6 +28,7 @@ https://adrian-shop.netlify.app/
 
 ## Screenshots 
 This is the design that I reproduced on this project
+
 ![Templates Login page](https://i.ibb.co/F3tCtt1/thumb-02-Template-Sign-In-Web-1280-1440px-12-Columns-24px-Gutters-2x.png)
 ![Templates Sign-Up page](https://i.ibb.co/44nq3mw/thumb-01-Template-Sign-Up-Web-1280-1440px-12-Columns-24px-Gutters-2x.png)
 ![Templates Homepage](https://i.ibb.co/LDyxns1/03-Template-Guest-Landing-Page-Web-1280-1440px-12-Columns-24px-Gutters-2x.png)
