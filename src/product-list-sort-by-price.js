@@ -8,7 +8,7 @@ sortingSelection.addEventListener('change', (e) => {
     // console.log(e.target.value);
     const sortingValue = e.target.value;
     console.log(sortingValue);
-    if (sortingValue === "price-az") {
+    if (sortingValue === "price-asc") {
         //sort value from low to high value
         products = [...products].sort((a, b) => {
             return a.price < b.price
@@ -19,7 +19,7 @@ sortingSelection.addEventListener('change', (e) => {
         });
         //sort prices from high value to low 
     }
-    if (sortingValue === "price-za") {
+    if (sortingValue === "price-desc") {
         products = [...products].sort((a, b) => {
             return a.price > b.price
                 ? -1

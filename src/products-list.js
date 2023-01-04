@@ -134,10 +134,10 @@ sortingSelect.addEventListener('change', async function (event) {
     if (event.target.value === 'default') {
         sortPriceAsc = null;
     }
-    if (event.target.value === "price-az") {
+    if (event.target.value === "price-asc") {
         sortPriceAsc = true;
     }
-    if (event.target.value === "price-za") {
+    if (event.target.value === "price-desc") {
         sortPriceAsc = false;
     }
     await addProductsToContainer();

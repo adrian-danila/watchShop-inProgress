@@ -157,5 +157,7 @@ function createProducts (avatar, name, price) {
     
 
 
+    // OLD CODE - First interaction
+
 
 
