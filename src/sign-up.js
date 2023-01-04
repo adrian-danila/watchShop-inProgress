@@ -30,3 +30,8 @@ const signUp = e => {
     e.preventDefault();
 }
 
+
+//Password length
+
+function passwordLength
+
