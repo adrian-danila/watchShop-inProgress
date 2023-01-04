@@ -13,6 +13,7 @@
     --customWhite: #e9eaeb;
     --customGreen: #66bb6a;
     --customYellow: #FBC02D;
+    --customTableColor: #F7F9FB;
 }
 
 body {
@@ -208,27 +209,43 @@ ul.breadcrumb li a {
 
 /* Price & Info Box */
 
-.quantity {
-    display: flex;
-}
-
-.quantity__input {
-    width: 40px;
-    height: 30px;
-}
-
 .price-info {
     width: 300px;
     height: 300px;
     margin-left: 20px;
     box-shadow: 0 0 3px grey;
     /* border: 1px solid grey; */
-    padding: 20px;
+}
+
+.inner-box {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    /* border: 2px solid yellow; */
+}
+
+.quantity {
+    display: flex;
+    gap: 5%;
+}
+
+.product-price {
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .price-info .product-title {
     font-weight: 400;
     font-size: 25px;
+}
+
+.quantity__minus, .quantity__plus {
+    text-decoration: none;
+}
+
+.quantity__input {
+    width: 40px;
+    height: 28px;
 }
 
 .btn-cart {
@@ -245,27 +262,26 @@ ul.breadcrumb li a {
     color: #ffff;
 }
 
-.price-info .product-details, .product-info {
+
+.product-details, .product-info {
     font-weight: 300;
     font-size: 20px;
 }
 
 
+/* Img preview  */
 .Box {
     display: flex;
 }
 
-.table-data {
-    /* border: 1px solid black; */
+table,th,td {
+    border: 1px solid var(--customGray);
+    border-collapse: collapse;
+    padding: 5px;
 }
 
-td {
-    background-color: #B3C4D4;
-}
-
-
-table {
-    border: 1px solid black;
+td:first-child {
+    background-color: var(--customTableColor);
 }
 
 /* ---------------Style Section One ---------------- */
