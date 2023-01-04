@@ -117,27 +117,36 @@ a:hover {
 .mask {
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 49, 66, 0.5);
+    background-color: rgba(36, 49, 66, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.h2-hero {
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1-hero {
     color: white;
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size:  24px;
     font-weight: 300;
+    padding: 24px;
 }
 
-.h4-hero {
+.p2-hero {
     color: white;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 14px;
 }
 
 input {
@@ -154,7 +163,9 @@ button {
     background-color: #66bb6a;
     border: 0;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 /* Section One Wrapper*/
@@ -269,7 +280,7 @@ button {
 .section-two .mask-container {
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 49, 66, 0.8);
+    background-color: rgba(36, 49, 66, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -280,6 +291,10 @@ button {
 .section-two p {
     color: white;
     font-size: 24px;
+}
+
+.paragraphs-container {
+    text-align: center;
 }
 
 .section-two a {
