@@ -8,15 +8,14 @@
 }
 
 :root {
-    --desaturatedBlue:#243142;
-    --customGray:#B3C4D4;
+    --desaturatedBlue: #243142;
+    --customGray: #B3C4D4;
     --customWhite: #E9EAEB;
     --customGreen: #66BB6A;
     --customBgLoginBox: #F7F9FB;
 }
 
 .container {
-   
     display: flex;
     height: 500px;
     width: 1000px;
@@ -46,7 +45,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(36,49,66,0.9);
+    background-color: rgba(36, 49, 66, 0.9);
 }
 
 .text {
@@ -66,7 +65,7 @@
     font-weight: 300;
 }
 
-.side a{
+.side a {
     width: 140px;
     height: 35px;
     display: flex;
@@ -80,7 +79,8 @@
     font-size: 12px;
 }
 
-.inputs-name, .inputs-email-password {
+.inputs-name,
+.inputs-email-password {
     display: flex;
 }
 
@@ -138,27 +138,43 @@
     align-items: center;
 }
 
-
-.box {
-    width: 250px;
-    height: 35px;
-    border: 1px solid var(--customGray);
-    padding: 5px;
-}
-
 #submit {
     width: 250px;
     height: 35px;
     background-color: var(--customGreen);
-    color: white;  
+    color: white;
     font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
     border: none;
 }
 
-.form a{
+.form a {
     color: #66BB6A;
     font-size: 13px;
     margin-top: 20px;
+}
+
+form input {
+    width: 250px;
+    height: 35px;
+    border: 1px solid var(--customGray);
+    padding: 0 8px;
+}
+
+form .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+form .input-wrapper i {
+    position: absolute;
+    right: 8px;
+    color: lightgray;
+}
+
+form .input-wrapper i:hover {
+    cursor: pointer;
+    color: #000;
 }

@@ -13,7 +13,7 @@
     --customWhite: #e9eaeb;
     --customGreen: #66bb6a;
     --customYellow: #FBC02D;
-    --customMask:rgba(36, 49, 66, 0.5);
+    --customMask: rgba(36, 49, 66, 0.5);
 }
 
 body {
@@ -24,82 +24,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 }
-
-/* Header */
-
-header {
-    display: flex;
-    justify-content: center;
-    color: #b3c4d4;
-    background-color: #243143;
-}
-
-header .container {
-    height: 58px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1000px;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-header .logo {
-    margin: 16px;
-}
-
-header .logo span {
-    text-transform: uppercase;
-}
-
-header .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-header li {
-    margin: 16px;
-}
-
-header a {
-    text-decoration: none;
-    color: #b3c4d4;
-}
-
-/* Navbar  */
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #ffff;
-}
-
-nav .categories-links-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-}
-
-nav .categories-links {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    width: 1000px;
-}
-
-nav li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--desaturatedBlue);
-    font-size: 13px;
-    margin: 16px;
-}
-
-a:hover {
-    color: #7ac47e;
-}
-
 
 /* ---------Hero Banner With SearchBar ------------- */
 
@@ -135,7 +59,7 @@ a:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size:  24px;
+    font-size: 24px;
     font-weight: 300;
     padding: 24px;
 }
@@ -349,7 +273,7 @@ button {
 }
 
 .section-three .paragraphs-container {
-padding: 0 0 20px;
+    padding: 0 0 20px;
 }
 
 .section-three .card p:first-of-type {
@@ -507,6 +431,10 @@ footer .row-footer {
 }
 
 @media screen and (max-width: 1100px) {
+    nav .wrapper {
+        width: 800px;
+    }
+
     .card {
         height: 350px;
     }
