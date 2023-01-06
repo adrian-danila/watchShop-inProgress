@@ -492,7 +492,11 @@ footer .row-footer {
     }
 
     .search-input {
-        width: 150px;
+        width: 200px;
+    }
+
+    .search-button {
+        width: 70px;
     }
 
     .show-watches {

@@ -85,7 +85,7 @@
 
 .inputs-right {
     height: auto;
-    width: 50%;
+    width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,3 +146,14 @@
     font-size: 13px;
     margin-top: 20px;
 }
+
+
+/* Media Queries  */
+
+@media screen and (max-width: 390px) {
+    .container {
+        width: 390px;
+    }
+    .side {
+        display: none;
+    }
