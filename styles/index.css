@@ -499,5 +499,11 @@ footer .row-footer {
         grid-template-columns: repeat(2,150px);
     }
 
-    .section-three .card-normal:nth-child(4);
+    .footer-col:first-child {
+        display: none;
+    }
+
+    .footer-col {
+        padding: 0 20px;
+    }
 }
