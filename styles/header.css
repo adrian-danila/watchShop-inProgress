@@ -27,7 +27,7 @@ header ul {
     gap: 32px;
 }
 
-header ul li:last-of-type {
+header .fa-bars {
     display: none;
 }
 
@@ -65,9 +65,14 @@ header ul li a:hover {
     header ul li:last-of-type {
         display: list-item;
     }
+    
+    header .fa-bars {
+        display: inline;
+    }
 
     header ul li:last-of-type:hover {
         cursor: pointer;
         color: #7ac47e;
     }
 }
+

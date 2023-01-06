@@ -1,76 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up Page</title>
-    <link rel="icon" type="image/x-icon" href="/images/watch.ico">
-    <link rel="stylesheet" href="/styles/sign-up.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-    <div class="container">
-        <div class="side">
-            <div class="mask">
-                <div class="text">
-                    <h1>IDS Luxury Watches</h1>
-                    <p>Your go to stop place for high quality
-                        wrist accesories & devices!
-                    </p>
-                </div>
-                <a href="#">For sellers</a>
-            </div>
-        </div>
-
-        <div class="inputs-right">
-            <img src="/images/logo-watch-login.png">
-            <form role="form" class="form" onsubmit="signUp(event);" autocomplete="off">
-                <p>Sign Up Below!</p>
-                <div class="inputs-field">
-                    <div class="inputs-name">
-                        <div class="inputs">
-                            <p>First Name</p>
-                            <input type="text" name="firstName" id="firstName" class="box" placeholder="Value" required>
-                        </div>
-
-                        <div class="inputs">
-                            <p>Last name</p>
-                            <input type="text" name="lastName" id="lastName" class="box" placeholder="Value" required>
-                        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-Up Page</title>
+        <link rel="icon" type="image/x-icon" href="/images/watch.ico">
+        <link rel="stylesheet" href="/styles/sign-up.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="side">
+                <div class="mask">
+                    <div class="text">
+                        <h1>IDS Luxury Watches</h1>
+                        <p>Your go to stop place for high quality wrist accesories & devices! </p>
                     </div>
-
-                    <div class="inputs-email-password">
-                        <div class="inputs">
-                            <p>Email Address</p>
-                            <input type="email" name="email" id="email" class="box" placeholder="Enter Email" required>
-                        </div>
-
-                        <div class="inputs">
-                            <p>Password</p>
-                            <div class="input-wrapper">
-                                <input type="password" name="password" class="box" id="password" placeholder="Enter password..."
-                                    required>
-                                <i class="fa-solid fa-eye show-password-icon"></i>
+                    <a href="#">For sellers</a>
+                </div>
+            </div>
+            <div class="inputs-right">
+                <img src="/images/logo-watch-login.png">
+                <form role="form" class="form" onsubmit="signUp(event);" autocomplete="off">
+                    <p>Sign Up Below!</p>
+                    <div class="inputs-field">
+                        <div class="inputs-name">
+                            <div class="inputs">
+                                <p>First Name</p>
+                                <input type="text" name="firstName" id="firstName" class="box" placeholder="Value" required>
+                            </div>
+                            <div class="inputs">
+                                <p>Last name</p>
+                                <input type="text" name="lastName" id="lastName" class="box" placeholder="Value" required>
                             </div>
                         </div>
+                        <div class="inputs-email-password">
+                            <div class="inputs">
+                                <p>Email Address</p>
+                                <input type="email" name="email" id="email" class="box" placeholder="Enter Email" required>
+                            </div>
+                            <div class="inputs">
+                                <p>Password</p>
+                                <div class="input-wrapper">
+                                    <input type="password" name="password" class="box" id="password" placeholder="Enter password..." required>
+                                    <i class="fa-solid fa-eye show-password-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputs sign-up">
+                            <input type="submit" value="Sign Up" id="submit">
+                            <a href="login.html">Already have an account? Sign in!</a>
+                        </div>
                     </div>
-
-                    <div class="inputs sign-up">
-                        <input type="submit" value="Sign Up" id="submit">
-                        <a href="login.html">Already have an account? Sign in!</a>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-
-    </div>
-    <script src="/src/sign-up.js"></script>
-</body>
-
+        <script src="/src/sign-up.js"></script>
+    </body>
 </html>
