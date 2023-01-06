@@ -1,374 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
-    <link rel="stylesheet" href="/styles/product-details.css">
-    <link rel="icon" type="image/x-icon" href="/images/watch.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <a href="/index.html">
-                        <i class="fa-solid fa-clock"></i>
-                        <span>Watch Shop</span>
-                    </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details</title>
+        <link rel="stylesheet" href="/styles/product-details.css">
+        <link rel="icon" type="image/x-icon" href="/images/watch.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <div class="container">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Watch Shop</span>
+                        </a>
+                    </div>
+                    <div class="nav-links-wrapper">
+                        <ul class="nav-links">
+                            <li>
+                                <a href="/cart.html">
+                                    <i class="fa-solid fa-cart-shopping"></i> Your Cart <span>0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/sign-up.html">
+                                    <i class="fa-solid fa-user"></i> Register </a>
+                            </li>
+                            <li>
+                                <a href="/login.html">
+                                    <i class="fa-solid fa-right-to-bracket"></i> Login </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="nav-links-wrapper">
-                    <ul class="nav-links">
+            </header>
+            <!-- Navbar -->
+            <nav>
+                <div class="categories-links-wrapper">
+                    <ul class="categories-links">
                         <li>
-                            <a href="/cart.html">
-                                <i class="fa-solid fa-cart-shopping"></i> Your Cart <span>0</span>
-                            </a>
+                            <a href="index.html">Category 1</a>
                         </li>
                         <li>
-                            <a href="/sign-up.html">
-                                <i class="fa-solid fa-user"></i> Register </a>
+                            <a href="products-list.html">Product List</a>
                         </li>
                         <li>
-                            <a href="/login.html">
-                                <i class="fa-solid fa-right-to-bracket"></i> Login </a>
+                            <a href="index.html">Category 3</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Category 4</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Category 5</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Category 6</a>
                         </li>
                     </ul>
                 </div>
+            </nav>
+            <!-- Searchbar -->
+            <div class="search-container">
+                <div class="inner-container">
+                    <input type="search" class="search-input" placeholder="Search for watch brand name or model...">
+                    <button class="search-button">Search</button>
+                </div>
             </div>
-        </header>
-        <!-- Navbar -->
-        <nav>
-            <div class="categories-links-wrapper">
-                <ul class="categories-links">
-                    <li>
-                        <a href="index.html">Category 1</a>
-                    </li>
-                    <li>
-                        <a href="products-list.html">Product List</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Category 3</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Category 4</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Category 5</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Category 6</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Searchbar -->
-        <div class="search-container">
-            <div class="inner-container">
-                <input type="search" class="search-input" placeholder="Search for watch brand name or model...">
-                <button class="search-button">Search</button>
-            </div>
-        </div>
-        <!-- Container Wrapper  -->
-        <div class="container-wrapper">
-            <!-- Details Container -->
-            <div class="details-container">
-                <!-- Breadcrumb navigation -->
-                <ul class="breadcrumb">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Rolex</a>
-                    </li>
-                    <li>
-                        <a href="#">Rolex Day-Date</a>
-                    </li>
-                </ul>
-                <div class="img-table-data"></div>
-                <!-- Image Preview  -->
-
-                <div class="img-info">
-                    <div class="imgs">
-                        <div class="img-big">
-                            <img src="/images/GreenWatchBig.png" class="img-big">
-                        </div>
-                    <!-- Img Preview -->
-                        <div class="img-preview-box">
-                            <img src="/images/rolex-day-date-green-1.jpg" class="img preview img-preview-one">
-                            <img src="/images/rolex-day-date-green-1.jpg" class="img preview img-preview-two">
-                            <img src="/images/rolex-day-date-green-1.jpg" class="img preview img-preview-three">
-                            <img src="/images/rolex-day-date-green-1.jpg" class="img preview img-preview-four">
-                        </div>
-                    </div>
-                    <!-- Price & Info Box -->
-                    <div class="price-info">
-                        <div class="inner-box">
-                            <h1 class="product-title">Title Product</h1>
-                            <div class="quantity">
-                                <p class="product-price">21.000 lei</p>
-                                <a href="#" class="quantity__minus"><span>-</span></a>
-                                <input name="quantity" type="text" class="quantity__input" value="1">
-                                <a href="#" class="quantity__plus"><span>+</span></a>
+            <!-- Container Wrapper  -->
+            <div class="container-wrapper">
+                <!-- Details Container -->
+                <div class="details-container">
+                    <!-- Breadcrumb navigation -->
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Rolex</a>
+                        </li>
+                        <li>
+                            <a href="#">Rolex Day-Date</a>
+                        </li>
+                    </ul>
+                    <div class="img-table-data"></div>
+                    <!-- Image Preview  -->
+                    <div class="img-info">
+                        <div class="imgs">
+                            <div class="img-big">
+                                <img src="/images/GreenWatchBig.png" class="img-big">
                             </div>
-                            <button class="btn-cart">Add to my cart</button>
-                            <div class="details">
-                                <p class="product-details">Details</p>
+                            <!-- Img Preview -->
+                            <div class="img-preview-box">
+                                <img src="/images/rolex-day-date-green-1.jpg" class="img preview img-preview-one">
+                                <img src="/images/rolex-day-date-green-1.jpg" class="img preview img-preview-two">
+                                <img src="/images/rolex-day-date-green-1.jpg" class="img preview img-preview-three">
+                                <img src="/images/rolex-day-date-green-1.jpg" class="img preview img-preview-four">
                             </div>
-                            <div class="info">
-                                <p class="product-info">Info & Stats</p>
+                        </div>
+                        <!-- Price & Info Box -->
+                        <div class="price-info">
+                            <div class="inner-box">
+                                <h1 class="product-title">Title Product</h1>
+                                <div class="quantity">
+                                    <p class="product-price">21.000 lei</p>
+                                    <a href="#" class="quantity__minus">
+                                        <span>-</span>
+                                    </a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus">
+                                        <span>+</span>
+                                    </a>
+                                </div>
+                                <button class="btn-cart">Add to my cart</button>
+                                <div class="details">
+                                    <p class="product-details">Details</p>
+                                </div>
+                                <div class="info">
+                                    <p class="product-info">Info & Stats</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="long-details">
+                        <h2 class="title-details">Details</h2>
+                        <p class="description-product">Launched in 1956, the Day-Date made its debut as the first waterproof and self-winding chronometer wristwatch to offer a modern calendar with an instantaneous day display, spelt out in full in a window on the dial, in adiition to da date. <br>
+                            <br> The exceptional precision, realibility, legibility and presence of this prestigious model has made it the ultimate status watch.
+                        </p>
+                    </div>
+                    <!-- Table data -->
+                    <p class="info-stats">Info & Stats</p>
+                    <table class="table-data">
+                        <div class="info-product">
+                            <p>Info</p>
+                            <tr>
+                                <td>Listing Numbers</td>
+                                <td>6D9CA9</td>
+                            </tr>
+                            <tr>
+                                <td>Reference Numbers</td>
+                                <td>6D9CA6</td>
+                            </tr>
+                            <tr>
+                                <td>Brand</td>
+                                <td>Rolex</td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Submariner Date</td>
+                            </tr>
+                        </div>
+                    </table>
+                    <table class="table-data">
+                        <div class="info-product">
+                            <p>Caliber</p>
+                            <tr>
+                                <td>Movevemnt</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td>Movement/Caliber</td>
+                                <td>3135</td>
+                            </tr>
+                            <tr>
+                                <td>Power reserve</td>
+                                <td>48 h</td>
+                            </tr>
+                        </div>
+                    </table>
+                    <table class="table-data">
+                        <div class="info-product">
+                            <p>Case</p>
+                            <tr>
+                                <td>Listing Numbers</td>
+                                <td>6D9CA9</td>
+                            </tr>
+                            <tr>
+                                <td>Reference Numbers</td>
+                                <td>6D9CA6</td>
+                            </tr>
+                            <tr>
+                                <td>Brand</td>
+                                <td>Rolex</td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Submariner Date</td>
+                            </tr>
+                        </div>
+                    </table>
+                    <table class="table-data">
+                        <div class="info-product">
+                            <p>Strap</p>
+                            <tr>
+                                <td>Bracelet material</td>
+                                <td>Steel</td>
+                            </tr>
+                            <tr>
+                                <td>Bracelet color</td>
+                                <td>Steel</td>
+                            </tr>
+                            <tr>
+                                <td>Clasp</td>
+                                <td>Fold Clasp</td>
+                            </tr>
+                            <tr>
+                                <td>Clasp material</td>
+                                <td>Steel</td>
+                            </tr>
+                        </div>
+                    </table>
                 </div>
-
-                <div class="long-details">
-                    <h2 class="title-details">Details</h2>
-                    <p class="description-product">Launched in 1956, the Day-Date made its debut as the first waterproof
-                        and self-winding chronometer wristwatch to offer a modern calendar with an instantaneous day
-                        display, spelt out in full in a window on the dial, in adiition to da date. <br>
-                        <br> The exceptional precision, realibility, legibility and presence of this prestigious model
-                        has made it the ultimate status watch.
-                    </p>
-                </div>
-                <!-- Table data -->
-                <p class="info-stats">Info & Stats</p>
-                <table class="table-data">
-                    <div class="info-product">
-                        <p>Info</p>
-                        <tr>
-                            <td>Listing Numbers</td>
-                            <td>6D9CA9</td>
-                        </tr>
-                        <tr>
-                            <td>Reference Numbers</td>
-                            <td>6D9CA6</td>
-                        </tr>
-                        <tr>
-                            <td>Brand</td>
-                            <td>Rolex</td>
-                        </tr>
-                        <tr>
-                            <td>Model</td>
-                            <td>Submariner Date</td>
-                        </tr>
-                    </div>
-                </table>
-                <table class="table-data">
-                    <div class="info-product">
-                        <p>Caliber</p>
-                        <tr>
-                            <td>Movevemnt</td>
-                            <td>Automatic</td>
-                        </tr>
-                        <tr>
-                            <td>Movement/Caliber</td>
-                            <td>3135</td>
-                        </tr>
-                        <tr>
-                            <td>Power reserve</td>
-                            <td>48 h</td>
-                        </tr>
-                    </div>
-                </table>
-                <table class="table-data">
-                    <div class="info-product">
-                        <p>Case</p>
-                        <tr>
-                            <td>Listing Numbers</td>
-                            <td>6D9CA9</td>
-                        </tr>
-                        <tr>
-                            <td>Reference Numbers</td>
-                            <td>6D9CA6</td>
-                        </tr>
-                        <tr>
-                            <td>Brand</td>
-                            <td>Rolex</td>
-                        </tr>
-                        <tr>
-                            <td>Model</td>
-                            <td>Submariner Date</td>
-                        </tr>
-                    </div>
-                </table>
-                <table class="table-data">
-                    <div class="info-product">
-                        <p>Strap</p>
-                        <tr>
-                            <td>Bracelet material</td>
-                            <td>Steel</td>
-                        </tr>
-                        <tr>
-                            <td>Bracelet color</td>
-                            <td>Steel</td>
-                        </tr>
-                        <tr>
-                            <td>Clasp</td>
-                            <td>Fold Clasp</td>
-                        </tr>
-                        <tr>
-                            <td>Clasp material</td>
-                            <td>Steel</td>
-                        </tr>
-                    </div>
-                </table>
             </div>
+            <!-- Section Wrapper  -->
+            <section class="section-wrapper">
+                <div class="div-wrapper">
+                    <h2 class="h2-section-title">Section Title</h2>
+                    <h3 class="h3-section-title">Subtitle with a call to action label goes here.</h3>
+                </div>
+            </section>
+            <!-- Section Three  -->
+            <section class="section-three">
+                <span class="arrows-section">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+                <div class="card-normal card">
+                    <img src="/images/img-2watches-card.png" alt="Two Watches">
+                    <div class="container">
+                        <div class="paragraphs-container">
+                            <p>Product title</p>
+                            <p>Text except for this content card goes here to tease users.</p>
+                        </div>
+                        <div class="button-wrapper">
+                            <a href="/product-details.html">View more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-normal card">
+                    <img src="/images/img-2watches-card.png" alt="Two Watches">
+                    <div class="container">
+                        <div class="paragraphs-container">
+                            <p>Product title</p>
+                            <p>Text except for this content card goes here to tease users.</p>
+                        </div>
+                        <div class="button-wrapper">
+                            <a href="/product-details.html">View more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-normal card">
+                    <img src="/images/img-2watches-card.png" alt="Two Watches">
+                    <div class="container">
+                        <div class="paragraphs-container">
+                            <p>Product title</p>
+                            <p>Text except for this content card goes here to tease users.</p>
+                        </div>
+                        <div class="button-wrapper">
+                            <a href="/product-details.html">View more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-normal card">
+                    <img src="/images/img-2watches-card.png" alt="Two Watches">
+                    <div class="container">
+                        <div class="paragraphs-container">
+                            <p>Product title</p>
+                            <p>Text except for this content card goes here to tease users.</p>
+                        </div>
+                        <div class="button-wrapper">
+                            <a href="/product-details.html">View more</a>
+                        </div>
+                    </div>
+                </div>
+                <span class="arrows-section">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </section>
+            <!-- Banner Top Footer -->
+            <div class="banner-top-footer">
+                <div class="banner-top-footer-content">
+                    <h4 class="h4-banner-top-footer">Start your 30-day free trial today. Cancel or upgrade anytime</h4>
+                    <button class="btn-banner-top-footer">Button Label</button>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer>
+                <div class="row-footer">
+                    <div class="footer-col">
+                        <h4 class="title-columns">
+                            <i class="fa-sharp fa-solid fa-circle"></i> The Footer
+                        </h4>
+                        <ul class="ul-footer">
+                            <li class="li-footer">
+                                <a href="#">
+                                    <span>2022 The Website, Inc</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="title-columns">About</h4>
+                        <ul class="ul-footer">
+                            <li class="li-footer">
+                                <a href="#">Team</a>
+                            </li>
+                            <li class="li-footer">
+                                <a href="#">Jobs</a>
+                            </li>
+                            <li class="li-footer">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="li-footer">
+                                <a href="#">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="title-columns">Help</h4>
+                        <ul class="ul-footer">
+                            <li class="li-footer">
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="li-footer">
+                                <a href="#">Security</a>
+                            </li>
+                            <li class="li-footer">
+                                <a href="#">Terms of service</a>
+                            </li>
+                            <li class="li-footer">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="title-columns">Connect</h4>
+                        <ul class="ul-footer">
+                            <li class="li-footer">
+                                <a href="https://www.facebook.com/">Facebook</a>
+                            </li>
+                            <li class="li-footer">
+                                <a href="https://www.youtube.com/">YouTube</a>
+                            </li>
+                            <li class="li-footer">
+                                <a href="https://twitter.com/">Twitter</a>
+                            </li>
+                            <li class="li-footer">
+                                <a href="https://www.instagram.com/">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <!-- Section Wrapper  -->
-        <section class="section-wrapper">
-            <div class="div-wrapper">
-                <h2 class="h2-section-title">Section Title</h2>
-                <h3 class="h3-section-title">Subtitle with a call to action label goes here.</h3>
-            </div>
-        </section>
-        <!-- Section Three  -->
-        <section class="section-three">
-            <span class="arrows-section">
-                <i class="fa-solid fa-arrow-left"></i>
-            </span>
-            <div class="card-normal card">
-                <img src="/images/img-2watches-card.png" alt="Two Watches">
-                <div class="container">
-                    <div class="paragraphs-container">
-                        <p>Product title</p>
-                        <p>Text except for this content card goes here to tease users.</p>
-                    </div>
-                    <div class="button-wrapper">
-                        <a href="/product-details.html">View more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-normal card">
-                <img src="/images/img-2watches-card.png" alt="Two Watches">
-                <div class="container">
-                    <div class="paragraphs-container">
-                        <p>Product title</p>
-                        <p>Text except for this content card goes here to tease users.</p>
-                    </div>
-                    <div class="button-wrapper">
-                        <a href="/product-details.html">View more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-normal card">
-                <img src="/images/img-2watches-card.png" alt="Two Watches">
-                <div class="container">
-                    <div class="paragraphs-container">
-                        <p>Product title</p>
-                        <p>Text except for this content card goes here to tease users.</p>
-                    </div>
-                    <div class="button-wrapper">
-                        <a href="/product-details.html">View more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-normal card">
-                <img src="/images/img-2watches-card.png" alt="Two Watches">
-                <div class="container">
-                    <div class="paragraphs-container">
-                        <p>Product title</p>
-                        <p>Text except for this content card goes here to tease users.</p>
-                    </div>
-                    <div class="button-wrapper">
-                        <a href="/product-details.html">View more</a>
-                    </div>
-                </div>
-            </div>
-
-            <span class="arrows-section">
-                <i class="fa-solid fa-arrow-right"></i>
-            </span>
-        </section>
-        <!-- Banner Top Footer -->
-        <div class="banner-top-footer">
-            <div class="banner-top-footer-content">
-                <h4 class="h4-banner-top-footer">Start your 30-day free trial today. Cancel or upgrade anytime</h4>
-                <button class="btn-banner-top-footer">Button Label</button>
-            </div>
-        </div>
-        <!-- Footer -->
-        <footer>
-            <div class="row-footer">
-                <div class="footer-col">
-                    <h4 class="title-columns">
-                        <i class="fa-sharp fa-solid fa-circle"></i> The Footer
-                    </h4>
-                    <ul class="ul-footer">
-                        <li class="li-footer">
-                            <a href="#">
-                                <span>2022 The Website, Inc</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="title-columns">About</h4>
-                    <ul class="ul-footer">
-                        <li class="li-footer">
-                            <a href="#">Team</a>
-                        </li>
-                        <li class="li-footer">
-                            <a href="#">Jobs</a>
-                        </li>
-                        <li class="li-footer">
-                            <a href="#">Blog</a>
-                        </li>
-                        <li class="li-footer">
-                            <a href="#">Press</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="title-columns">Help</h4>
-                    <ul class="ul-footer">
-                        <li class="li-footer">
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li class="li-footer">
-                            <a href="#">Security</a>
-                        </li>
-                        <li class="li-footer">
-                            <a href="#">Terms of service</a>
-                        </li>
-                        <li class="li-footer">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="title-columns">Connect</h4>
-                    <ul class="ul-footer">
-                        <li class="li-footer">
-                            <a href="https://www.facebook.com/">Facebook</a>
-                        </li>
-                        <li class="li-footer">
-                            <a href="https://www.youtube.com/">YouTube</a>
-                        </li>
-                        <li class="li-footer">
-                            <a href="https://twitter.com/">Twitter</a>
-                        </li>
-                        <li class="li-footer">
-                            <a href="https://www.instagram.com/">Instagram</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="/src/product-details.js"></script>
-</body>
-
+        <script src="/src/product-details.js"></script>
+    </body>
 </html>
