@@ -13,3 +13,16 @@ searchButton.addEventListener('click', function(){
     window.location.href = `${window.location.origin}/products-list.html?searchTerm=${searchInput.value}`;
 })
 
+function preview(event)
+{
+    const productImage = document.querySelector('.img-big img');
+    productImage.src = event.target.src;
+}
+
+function previewFunctionality()
+{
+    const previewImages = document.querySelectorAll('.img-preview-box img');
+    [...previewImages].map((previewImage) => previewImage.addEventListener('click', preview));
+}
+
+previewFunctionality();
