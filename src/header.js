@@ -1,5 +1,6 @@
 function getHeaderHTML() {
     return `
+    <!-- Header -->
         <header>
             <div class="container">
                 <div class="logo">
@@ -38,14 +39,15 @@ function getHeaderHTML() {
     `
 }
 
-function updateShoppingCartQuantity() {
-    const shoppingCartQuantitySpan = document.querySelector(".shopping-cart-quantity");
-    shoppingCartQuantitySpan.textContent = getTotalQuantityLS();
-}
 
 function addHeaderHTML() {
     const container = document.querySelector('.container');
     container.innerHTML = getHeaderHTML() + container.innerHTML;
+}
+
+function updateShoppingCartQuantity() {
+    const shoppingCartQuantitySpan = document.querySelector(".shopping-cart-quantity");
+    shoppingCartQuantitySpan.textContent = getTotalQuantityLS();
 }
 
 function addEventListenerHamburgerIcon() {
