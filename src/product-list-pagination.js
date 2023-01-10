@@ -20,3 +20,6 @@ nextButton.addEventListener('click', () => {
 });
 
 
+// Old code, now it's under construction
+
+

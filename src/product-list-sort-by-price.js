@@ -1,7 +1,5 @@
 // Sort prices Low to High and High to Low
 
-
-
 const sortingSelection = document.getElementById('sorting-select');
 
 sortingSelection.addEventListener('change', (e) => {

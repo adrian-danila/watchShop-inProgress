@@ -5,17 +5,12 @@ function getProductsFromLS() {
 function deleteProductFromLS(product) {
     const productsLS = getProductsFromLS();
     if(productsLS){
-        // Aici ne filtram toate produsele din local storage, care au id-ul diferit de produsul nostru
-        // asta inseaman ca ne raman doar produsele ce nu au id-ul produsului nostru
         const filteredProductsLS = productsLS.filter((productLS) => productLS.id !== product.id);
-        // si produsele astea, care nu sunt produsul nostru primit ca parametru, le bagam in localstorage, inapoi
-        // si practic asa, am scapat de produsul nostru, nu va mai fi in local storage
         localStorage.setItem('products', JSON.stringify(filteredProductsLS));
     }
 }
 
 function addProductToLS(product) {
-    // De ce am folosit JSON.parse? Pentru ca in local storage totul e STRING, pare ca e JSON, dar de fapt e un string
     let productsLS = getProductsFromLS();
     if(productsLS)
     {
