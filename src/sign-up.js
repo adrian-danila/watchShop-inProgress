@@ -11,15 +11,15 @@ const signUp = e => {
 
     let exist = formData.length &&
         JSON.parse(localStorage.getItem('formData')).some(data =>
-            data.fname.toLowerCase() == fname.toLowerCase() &&
-            data.lname.toLowerCase() == lname.toLowerCase()
+            data.firstName.toLowerCase() == firstName.toLowerCase() &&
+            data.lastName.toLowerCase() == lastName.toLowerCase()
         );
 
     if (!exist) {
-        formData.push({ fname, lname, email, password });
+        formData.push({ firstName, lastName, email, password });
         localStorage.setItem('formData', JSON.stringify(formData));
         document.querySelector('form').reset();
-        document.getElementById('fname').focus();
+        document.getElementById('firstName').focus();
         alert("Account Created.\n\nPlease Sign In using the link below.");
     }
     else {
