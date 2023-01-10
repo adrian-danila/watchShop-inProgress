@@ -1,5 +1,5 @@
 
-//Disabled button when input email it's empty
+//Disabled submit button when inputs are empty
 
 const email = document.getElementById("email");
 const password = document.getElementById("password");
