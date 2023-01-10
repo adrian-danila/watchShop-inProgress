@@ -133,12 +133,16 @@
 #submit {
     width: 250px;
     height: 35px;
-    background-color: var(--customGreen);
+    /* background-color: var(--customGreen); */
     color: white;  
     font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
     border: none;
+}
+
+#submit:disabled {
+    background-color: lightgray;
 }
 
 .form a{

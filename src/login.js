@@ -1,16 +1,22 @@
 
 //Disabled button when input email it's empty
 
-document.getElementById("submit").disabled = true;
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const submitButton = document.getElementById("submit");
 
-document.getElementById("email").addEventListener("keyup", e => {
-    if(e.target.value ==""){
-        document.getElementById("submit").disabled = true;
+submitButton.disabled = true;
+password.addEventListener("input", checkInputs);
+
+
+function checkInputs() {
+    if(email.value.length > 0 && password.value.length > 0) {
+        submitButton.disabled = false;
+        submitButton.style.backgroundColor = "var(--customGreen";
     } else {
-        document.getElementById('submit').disabled = false;
+        submitButton.disabled = true;
     }
-});
-
+}
 
 //Local storage accounts
 
