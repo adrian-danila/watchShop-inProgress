@@ -11,6 +11,6 @@ searchButton.addEventListener('click', function(){
     window.location.href = `${window.location.origin}/products-list.html?searchTerm=${searchInput.value}`;
 });
 
-console.log(window.location.href);
+
 
 
